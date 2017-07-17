@@ -28,7 +28,6 @@ caption     | text      |
 project_id  | integer   | not null, foreign key (references projects), indexed
 
 ## likes
-//uniqueness constraint somehow so doesn't need its own id
 column name | data type | details
 ------------|-----------|-----------------------
 user_id     | integer   | not null, foreign key (references users), indexed
