@@ -25,13 +25,12 @@ column name | data type | details
 id          | integer   | not null, primary key
 img_url     | string    | not null
 caption     | text      |
-user_id     | integer   | not null, foreign key (references users), indexed
 project_id  | integer   | not null, foreign key (references projects), indexed
 
 ## likes
+//uniqueness constraint somehow so doesn't need its own id
 column name | data type | details
 ------------|-----------|-----------------------
-id          | integer   | not null, primary key
 user_id     | integer   | not null, foreign key (references users), indexed
 project_id  | integer   | not null, foreign key (references projects), indexed
 

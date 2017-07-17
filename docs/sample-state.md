@@ -3,9 +3,7 @@
   currentUser: {
     1: {
       id: 1,
-      username: 'Anabanana',
-      password_digest: 'jkslmscnaeilwun97qk32nkc43',
-      session_token: 'afjdj23skdl4372890odfjslkKJB'
+      username: 'picasso'
     }
   }
 
@@ -54,9 +52,8 @@
     1: {
       id: 1,
       body: 'Nice!',
-      projectId: 1
-      likes: 3,
-      commentorId: 3,
+      projectId: 1,
+      commentorId: 3
     }
   }
 

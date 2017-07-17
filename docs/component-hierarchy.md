@@ -17,31 +17,28 @@
 **HomeContainer**
   * Header
   * ProjectsIndex
-    * ProjectIndexItem
+    * ProjectItem
       * ImagesIndex
-        * ImagesIndexItem
-    * ProjectIndexItemDetails
+    * ProjectItemDetails
 
 **ProjectShowContainer**
-  * ProjectIndexItem
-    * ProjectIndexItemDetails
+  * ProjectItem
+    * ProjectItemDetails
     * ImagesIndex
-      * ImagesIndexItem
     * CommentForm
     * CommentsIndex
-      * CommentsIndexItem
-        * CommentsDetail
+      * CommentItem
 
+**UserProfileContainer**
 
 ## Routes
 
 |Path   | Component   |
 |-------|-------------|
+| "/home" | "HomeContainer" |
 | "/sign-up" | "AuthFormContainer" |
 | "/sign-in" | "AuthFormContainer" |
 | "/projects" | "ProjectsIndex" |
-| "/post/new/" | "NewProjectForm" |
+| "/projects/new" | "NewProjectForm" |
 | "/projects/id" | "ProjectShow" |
-| "/projects/id/images" | "ImagesIndex" |
-| "/projects/id/comments" | "CommentsIndex" |
-| "/projects/id/comments/commentId" | "CommentDetail" |
+| "/users/id" | "ProfileShow" |
