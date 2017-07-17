@@ -1,5 +1,7 @@
 # Baehance Project Proposal
+
 [Heroku link][heroku]
+
 [Trello link][trello]
 
 [heroku]: http://www.herokuapp.com
@@ -7,15 +9,15 @@
 
 ## Minimum Viable Product
 
-Behance is a portfolio showcase web application inspired by Behance-- built with Ruby on Rails and React/Redux. All MVP features will have smooth, bug-free navigation, adequate seed data and stylish CSS:
+Baehance is a portfolio showcase web application inspired by Behance-- built with Ruby on Rails and React/Redux. All MVP features will have smooth, bug-free navigation, adequate seed data and stylish CSS:
 
-- [ ] Hosting on Heroku
-- [ ] Production README
-- [ ] Account Management with Demo option
-- [ ] Portfolio Viewing
-- [ ] Explore Portfolios
-- [ ] Likes
-- [ ] Comments
+1. Hosting on Heroku
+2. Production README
+3. Account Management with Demo option
+4. Portfolio Viewing
+5. Explore Portfolios
+6. Likes
+7. Comments
 
 ## Design Docs
 * [View Wireframes][wireframes]
@@ -36,11 +38,11 @@ Behance is a portfolio showcase web application inspired by Behance-- built with
 
 **Objective:** To have a functioning rails project with front end authentication.
 
-### Phase 2: Portfolio Model, API, and components (2 days)
+### Phase 2: Project Model, API, and Components (2 days)
 
 **Objective:** Each user has a portfolio, which hosts many projects. Projects can be created, read, edited, and destroyed through the API.
 
-### Phase 3: Project Content (2 days)
+### Phase 3: Project Content (Images) (2 days)
 
 **Objective:** Each project can have many images, which can be created, read, edited, and destroyed through the API.
 
@@ -54,7 +56,7 @@ Behance is a portfolio showcase web application inspired by Behance-- built with
 
 ### Phase 6: Additional Styling (1 day)
 
-**Objective:** To make a baeutiful landing page, with infinite scroll of projects.
+**Objective:** To make a bae-utiful landing page, with infinite scroll of projects.
 
 ### Bonus Features
 - [ ] Follows: Users can follow each other.
