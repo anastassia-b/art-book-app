@@ -6,6 +6,7 @@ class SessionForm extends React.Component {
     super(props);
     this.state = {
       username: '',
+      email: '',
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -49,31 +50,51 @@ class SessionForm extends React.Component {
     );
   }
 
+  emailInput() {
+    if (this.props.formType === 'login') {
+      return ;
+    } else {
+      return (
+        <label className="login-input">
+          <input type="text"
+            placeholder="Email"
+            value={this.state.email}
+            onChange={this.update('email')}
+          />
+        </label>
+      );
+    }
+  }
+
   render() {
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-        Welcome to Behance!
+        Welcome to Baehance!
         <br/>
         Please {this.props.formType} or {this.navLink()}
         {this.renderErrors()}
         <div className="login-form">
-          <br/>
-          <label>Username:
+
+          <label className="login-input">
             <input type="text"
+              placeholder="Username"
               value={this.state.username}
               onChange={this.update('username')}
-              className="login-input"/>
+            />
           </label>
-          <br/>
-          <label>Password:
+
+          {this.emailInput()}
+
+          <label className="login-input">
             <input type="password"
+              placeholder="Password"
               value={this.state.password}
               onChange={this.update('password')}
-              className="login-input"/>
+            />
           </label>
-          <br/>
-          <input type="submit" value="Submit" />
+
+          <input type="submit" value="Submit" className="submit-button"/>
         </div>
         </form>
       </div>
