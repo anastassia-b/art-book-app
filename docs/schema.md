@@ -8,7 +8,8 @@ username        | string    | not null, indexed, unique
 email           | string    | not null, indexed, unique
 password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
-user_img_url    | string    | default: (url to guest image)
+avatar_url    | string    | default: (url to guest image)
+description | string | 
 
 ## projects
 column name | data type | details
