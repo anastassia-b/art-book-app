@@ -1,5 +1,43 @@
 {
   "name": "baehance",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.2",
+    "redux": "^3.7.2",
+    "webpack": "^3.3.0"
+  },
+  "engines": {
+    "node": "6.10.0",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "postinstall": "webpack",
+    "start": "webpack --watch"
+  },
+  "description": "Baehance is a portfolio showcase web application inspired by Behance. It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anastassia-b/baehance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anastassia-b/baehance/issues"
+  },
+  "homepage": "https://github.com/anastassia-b/baehance#readme"
 }
