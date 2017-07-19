@@ -10,6 +10,7 @@ class SessionForm extends React.Component {
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleGuestSubmit = this.handleGuestSubmit.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -27,14 +28,23 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm({user});
+    this.props.processForm(user);
+  }
+
+  handleGuestSubmit(e) {
+    e.preventDefault();
+    const user = {
+      username: "guest",
+      password: "password"
+    };
+    this.props.guestLogin(user);
   }
 
   navLink() {
     if (this.props.formType === 'login') {
-      return <Link to="/signup">sign up instead</Link>;
+      return <Link to="/signup">New user? Sign up instead!</Link>;
     } else {
-      return <Link to="/login">login instead</Link>;
+      return <Link to="/login">Have an account? Login instead!</Link>;
     }
   }
 
@@ -70,10 +80,10 @@ class SessionForm extends React.Component {
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-        Welcome to Baehance!
-        <br/>
-        Please {this.props.formType} or {this.navLink()}
-        {this.renderErrors()}
+        <span className="welcome-text">Welcome to Baehance!</span>
+        <span className="session-errors">
+          {this.renderErrors()}
+        </span>
         <div className="login-form">
 
           <label className="login-input">
@@ -94,7 +104,11 @@ class SessionForm extends React.Component {
             />
           </label>
 
-          <input type="submit" value="Submit" className="submit-button"/>
+          <div className="session-button-container">
+            <input className="session-button" type="submit" value={this.props.formType} />
+            <button className="session-button" onClick={this.handleGuestSubmit}>demo</button>
+          </div>
+          <span className="alternate-session">{this.navLink()}</span>
         </div>
         </form>
       </div>

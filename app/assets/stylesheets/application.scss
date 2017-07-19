@@ -82,12 +82,34 @@ header {
   border-radius: 3px;
 }
 
-.submit-button {
-  margin-top: 10px;
+.session-button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.session-button {
+  margin: 10px 0px;
+  padding: 0 10px;
   height: 30px;
   border-radius: 3px;
   background: $dark-blue;
   color: white;
+}
+
+.session-errors {
+
+}
+
+.alternate-session {
+  margin-top: 10px;
+  color: $gray;
+  font-size: 13px;
+  text-align: center;
+}
+
+.welcome-text {
+  display: flex;
+  justify-content: center;
 }
 
 /*.login-form .login-input {
