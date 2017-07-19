@@ -12,16 +12,16 @@ const style = {
   content : {
     position        : 'fixed',
     top             : '50px',
-    bottom          : '100px',
+    // bottom          : '100px',
     margin          : 'auto',
     width           : '300px',
-    height          : '500px',
+    height          : '300px',
     // border          : '1px solid #ccc',
     border          : '1px solid #000',
     padding         : '30px 50px',
     zIndex          : 11,
 
-    backgroundColor : '#000000',
+    backgroundColor : '#ffffff',
 
     // opacity         : '',
     // transition      : 'opacity 2s'

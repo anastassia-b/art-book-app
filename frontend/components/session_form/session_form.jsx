@@ -1,5 +1,8 @@
 import React from 'react';
+import Modal from 'react-modal';
 import { Link, withRouter } from 'react-router-dom';
+import style from './modal_style';
+
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -7,51 +10,50 @@ class SessionForm extends React.Component {
     this.state = {
       username: '',
       email: '',
-      password: ''
+      password: '',
+      modalOpen: false,
+      logIn: false,
     };
+
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleGuestSubmit = this.handleGuestSubmit.bind(this);
+    this.guestLogin = this.guestLogin.bind(this);
+    this.switchForms = this.switchForms.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
-      this.props.history.push('/');
+      this.props.history.push('/home');
     }
   }
 
   update(field) {
-    return e => this.setState({
-      [field]: e.currentTarget.value
-    });
+    return e => {
+      this.setState({[field]: e.currentTarget.value});
+    };
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm(user);
-  }
-
-  handleGuestSubmit(e) {
-    e.preventDefault();
-    const user = {
-      username: "guest",
-      password: "password"
-    };
-    this.props.guestLogin(user);
-  }
-
-  navLink() {
-    if (this.props.formType === 'login') {
-      return <Link to="/signup">New user? Sign up instead!</Link>;
+    if (this.state.logIn) {
+      this.props.login({user});
     } else {
-      return <Link to="/login">Have an account? Login instead!</Link>;
+      this.props.signup({user});
     }
+  }
+
+  guestLogin(e) {
+    e.preventDefault();
+    const user = {username: 'guest', password: 'password'};
+    this.props.login(user);
   }
 
   renderErrors() {
     return(
       <ul>
-        {this.props.errors.map((error, i) => (
+        {this.props.errors.map((error, i) =>(
           <li key={`error-${i}`}>
             {error}
           </li>
@@ -60,10 +62,37 @@ class SessionForm extends React.Component {
     );
   }
 
+  closeModal() {
+    this.setState({ modalOpen: false });
+  }
+
+  openModal(bool) {
+    this.setState({
+      modalOpen: true,
+      logIn: bool
+    });
+  }
+
+  formHeader() {
+    return (this.state.logIn) ? <h3>Log in to Baehance</h3> : <h3>Join Baehance</h3>;
+  }
+
+  formButton() {
+    return (this.state.logIn) ? <h3>Log in</h3> : <h3>Sign up</h3>;
+  }
+
+  switchForms() {
+    this.setState({
+      logIn: !this.state.logIn
+    });
+  }
+
+  switchButton() {
+    return (this.state.logIn) ? <p>Don't have an account? Sign up</p> : <p>Already have an account? Log in</p>;
+  }
+
   emailInput() {
-    if (this.props.formType === 'login') {
-      return ;
-    } else {
+    if (!this.state.logIn) {
       return (
         <label className="login-input">
           <input type="text"
@@ -78,159 +107,61 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-        <span className="welcome-text">Welcome to Baehance!</span>
-        <span className="session-errors">
-          {this.renderErrors()}
-        </span>
-        <div className="login-form">
+      <nav className="login-signup">
+        <button onClick={this.openModal.bind(this, true)}>Login</button>
+        <button onClick={this.openModal.bind(this, false)}>Sign up</button>
 
-          <label className="login-input">
-            <input type="text"
-              placeholder="Username"
-              value={this.state.username}
-              onChange={this.update('username')}
-            />
-          </label>
+        <Modal
+          contentLabel="Modal"
+          isOpen={this.state.modalOpen}
+          onRequestClose={this.closeModal}
+          style={style}>
 
-          {this.emailInput()}
+          <div className="login-form-container">
+            <div className="x-button">
+              <button onClick={this.closeModal}><i aria-hidden="true"></i></button>
+            </div>
 
-          <label className="login-input">
-            <input type="password"
-              placeholder="Password"
-              value={this.state.password}
-              onChange={this.update('password')}
-            />
-          </label>
+            <form className="login-form-box">
+                <br/>
+              {this.formHeader()}
+                <br/>
+              {this.renderErrors()}
 
-          <div className="session-button-container">
-            <input className="session-button" type="submit" value={this.props.formType} />
-            <button className="session-button" onClick={this.handleGuestSubmit}>demo</button>
+              <div className="login-form">
+
+                <label className="login-input">
+                  <input type="text"
+                    placeholder="Username"
+                    value={this.state.username}
+                    onChange={this.update('username')}
+                  />
+                </label>
+
+                {this.emailInput()}
+
+                <label className="login-input">
+                  <input type="password"
+                    placeholder="Password"
+                    value={this.state.password}
+                    onChange={this.update('password')}
+                  />
+                </label>
+
+                <div className="session-button-container">
+                  <button onClick={this.handleSubmit}>{this.formButton()}</button>
+                  <p>or</p>
+                  <button onClick={this.guestLogin}>Guest Demo</button>
+                </div>
+                <a href="/#" onClick={this.switchForms}>{this.switchButton()}</a>
+              </div>
+            </form>
           </div>
-          <span className="alternate-session">{this.navLink()}</span>
-        </div>
-        </form>
-      </div>
+        </Modal>
+      </nav>
     );
   }
+
 }
 
 export default withRouter(SessionForm);
-
-// before:
-//
-// class SessionForm extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       username: '',
-//       email: '',
-//       password: ''
-//     };
-//     this.handleSubmit = this.handleSubmit.bind(this);
-//     this.handleGuestSubmit = this.handleGuestSubmit.bind(this);
-//   }
-//
-//   componentWillReceiveProps(nextProps) {
-//     if (nextProps.loggedIn) {
-//       this.props.history.push('/');
-//     }
-//   }
-//
-//   update(field) {
-//     return e => this.setState({
-//       [field]: e.currentTarget.value
-//     });
-//   }
-//
-//   handleSubmit(e) {
-//     e.preventDefault();
-//     const user = this.state;
-//     this.props.processForm(user);
-//   }
-//
-//   handleGuestSubmit(e) {
-//     e.preventDefault();
-//     const user = {
-//       username: "guest",
-//       password: "password"
-//     };
-//     this.props.guestLogin(user);
-//   }
-//
-//   navLink() {
-//     if (this.props.formType === 'login') {
-//       return <Link to="/signup">New user? Sign up instead!</Link>;
-//     } else {
-//       return <Link to="/login">Have an account? Login instead!</Link>;
-//     }
-//   }
-//
-//   renderErrors() {
-//     return(
-//       <ul>
-//         {this.props.errors.map((error, i) => (
-//           <li key={`error-${i}`}>
-//             {error}
-//           </li>
-//         ))}
-//       </ul>
-//     );
-//   }
-//
-//   emailInput() {
-//     if (this.props.formType === 'login') {
-//       return ;
-//     } else {
-//       return (
-//         <label className="login-input">
-//           <input type="text"
-//             placeholder="Email"
-//             value={this.state.email}
-//             onChange={this.update('email')}
-//           />
-//         </label>
-//       );
-//     }
-//   }
-//
-//   render() {
-//     return (
-//       <div className="login-form-container">
-//         <form onSubmit={this.handleSubmit} className="login-form-box">
-//         <span className="welcome-text">Welcome to Baehance!</span>
-//         <span className="session-errors">
-//           {this.renderErrors()}
-//         </span>
-//         <div className="login-form">
-//
-//           <label className="login-input">
-//             <input type="text"
-//               placeholder="Username"
-//               value={this.state.username}
-//               onChange={this.update('username')}
-//             />
-//           </label>
-//
-//           {this.emailInput()}
-//
-//           <label className="login-input">
-//             <input type="password"
-//               placeholder="Password"
-//               value={this.state.password}
-//               onChange={this.update('password')}
-//             />
-//           </label>
-//
-//           <div className="session-button-container">
-//             <input className="session-button" type="submit" value={this.props.formType} />
-//             <button className="session-button" onClick={this.handleGuestSubmit}>demo</button>
-//           </div>
-//           <span className="alternate-session">{this.navLink()}</span>
-//         </div>
-//         </form>
-//       </div>
-//     );
-//   }
-// }

@@ -17,106 +17,96 @@
 @import "./colors.scss";
 @import "./api/*";
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background-color: $orange;
-  color: white;
-  padding: 10px;
-}
-
-.header-link {
-  font-size: 32px;
-  text-decoration: none;
-  color: white;
-}
-
-.login-signup {
-  padding: 10px 20px;
-}
-
-.header-group {
-  padding: 0 20px;
-}
-
-.header-name {
-
-}
-
-.header-button {
-
-}
-
-.login-form-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
-}
-
-.login-form-box {
-  outline: 1px solid black;
-  padding: 20px;
-  border-radius: 3px;
-}
-
-.login-form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 10px;
-}
-
-.login-input {
-  margin-top: 10px;
-  padding-left: 10px;
-  height: 30px;
-  font-weight: bold;
-  font-size: 14px;
-  background-color: $light-gray;
-  outline: none;
-  border-radius: 3px;
-}
-
-.session-button-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.session-button {
-  margin: 10px 0px;
-  padding: 0 10px;
-  height: 30px;
-  border-radius: 3px;
-  background: $dark-blue;
-  color: white;
-}
-
-.session-errors {
-
-}
-
-.alternate-session {
-  margin-top: 10px;
-  color: $gray;
-  font-size: 13px;
-  text-align: center;
-}
-
-.welcome-text {
-  display: flex;
-  justify-content: center;
-}
-
-/*.login-form .login-input {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px;
-}*/
-
-/*.login-input {
- margin-left: 20px;
-}*/
+// header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-content: center;
+//   width: 100%;
+//   position: fixed;
+//   top: 0;
+//   background-color: $orange;
+//   color: white;
+//   padding: 10px;
+// }
+//
+// .header-link {
+//   font-size: 32px;
+//   text-decoration: none;
+//   color: white;
+// }
+//
+// .login-signup {
+//   padding: 10px 20px;
+// }
+//
+// .header-group {
+//   padding: 0 20px;
+// }
+//
+// .header-name {
+//
+// }
+//
+// .header-button {
+//
+// }
+//
+// .login-form-container {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 120px;
+// }
+//
+// .login-form-box {
+//   outline: 1px solid black;
+//   padding: 20px;
+//   border-radius: 3px;
+// }
+//
+// .login-form {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   margin: 10px;
+// }
+//
+// .login-input {
+//   margin-top: 10px;
+//   padding-left: 10px;
+//   height: 30px;
+//   font-weight: bold;
+//   font-size: 14px;
+//   background-color: $light-gray;
+//   outline: none;
+//   border-radius: 3px;
+// }
+//
+// .session-button-container {
+//   display: flex;
+//   justify-content: space-around;
+// }
+//
+// .session-button {
+//   margin: 10px 0px;
+//   padding: 0 10px;
+//   height: 30px;
+//   border-radius: 3px;
+//   background: $dark-blue;
+//   color: white;
+// }
+//
+// .session-errors {
+//
+// }
+//
+// .alternate-session {
+//   margin-top: 10px;
+//   color: $gray;
+//   font-size: 13px;
+//   text-align: center;
+// }
+//
+// .welcome-text {
+//   display: flex;
+//   justify-content: center;
+// }
