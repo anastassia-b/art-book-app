@@ -22,12 +22,6 @@ class SessionForm extends React.Component {
     this.switchForms = this.switchForms.bind(this);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.loggedIn) {
-      this.props.history.push('/home');
-    }
-  }
-
   update(field) {
     return e => {
       this.setState({[field]: e.currentTarget.value});
@@ -38,9 +32,9 @@ class SessionForm extends React.Component {
     e.preventDefault();
     const user = this.state;
     if (this.state.logIn) {
-      this.props.login({user});
+      this.props.login(user);
     } else {
-      this.props.signup({user});
+      this.props.signup(user);
     }
   }
 
@@ -108,8 +102,11 @@ class SessionForm extends React.Component {
   render() {
     return (
       <nav className="login-signup">
-        <button onClick={this.openModal.bind(this, true)}>Login</button>
-        <button onClick={this.openModal.bind(this, false)}>Sign up</button>
+
+        <div className="header-group">
+          <button onClick={this.openModal.bind(this, true)}>Login</button>
+          <button onClick={this.openModal.bind(this, false)}>Sign up</button>
+        </div>
 
         <Modal
           contentLabel="Modal"
@@ -150,7 +147,6 @@ class SessionForm extends React.Component {
 
                 <div className="session-button-container">
                   <button onClick={this.handleSubmit}>{this.formButton()}</button>
-                  <p>or</p>
                   <button onClick={this.guestLogin}>Guest Demo</button>
                 </div>
                 <a href="/#" onClick={this.switchForms}>{this.switchButton()}</a>

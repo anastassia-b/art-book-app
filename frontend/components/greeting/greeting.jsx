@@ -1,23 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-const sessionLinks = () => (
-  <nav className="login-signup">
-    <Link to="/login">Login</Link>
-    &nbsp;or&nbsp;
-    <Link to="/signup">Sign up!</Link>
+const Greeting = ({ currentUser, logout }) => (
+  <nav className="home-nav-right">
+    <div>
+        <Link to="/home">
+          <button className="header-homefeed">
+            <p>Home Feed</p>
+          </button>
+        </Link>
+
+        <Link to="/" onClick={logout}>
+          <button className="header-button">
+            <p>Log Out</p>
+          </button>
+        </Link>
+
+    </div>
   </nav>
 );
 
-const personalGreeting = (currentUser, logout) => (
-  <hgroup className="header-group">
-    <h2 className="header-name">Hi, {currentUser.username}!</h2>
-    <button className="header-button" onClick={logout}>Log Out</button>
-  </hgroup>
-);
-
-const Greeting = ({ currentUser, logout }) => (
-  currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
-);
-
-export default Greeting;
+export default withRouter(Greeting);

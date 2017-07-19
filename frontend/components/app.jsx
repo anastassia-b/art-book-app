@@ -12,28 +12,13 @@ const App = () => (
     <header>
       <Link to="/" className="header-link"><h1>Baehance</h1></Link>
       <AuthRoute path="/" component={SessionFormContainer} />
+      <ProtectedRoute path="/home" component={GreetingContainer} />
     </header>
 
     <main className="main">
-      <Route path="/" component={SplashContainer} />
+      <Route exact path="/" component={SplashContainer} />
     </main>
   </div>
 );
 
 export default App;
-
-
-// before:
-//
-// const App = () => (
-//   <div>
-//     <header>
-//       <Link to="/" className="header-link">
-//         <h1>Baehance</h1>
-//       </Link>
-//       <GreetingContainer />
-//     </header>
-//     <AuthRoute path="/login" component={SessionFormContainer} />
-//     <AuthRoute path="/signup" component={SessionFormContainer} />
-//   </div>
-// );
