@@ -16,8 +16,8 @@ class Splash extends React.Component {
     return (
       <section className="splash-image">
         <section className="splash-text">
-          <h1>Splash Text</h1>
-          <h4>More text</h4>
+          <h1>Art Portfolio</h1>
+          <h4>Discover and showcase creative work. Lorem ipsum dolor sit amet, ne nam ignota nostrud. Suas vero posse id has. Animal commodo recteque vim ut, vidit melius senserit in est. Malis placerat eam ei, ea wisi splendide per. Ad eam aeterno nostrum dissentiunt.</h4>
           <button onClick={this.guestLogin}>Demo</button>
         </section>
       </section>
