@@ -2,11 +2,11 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 const Greeting = ({ currentUser, logout }) => (
-  <nav className="home-nav-right">
+  <nav className="nav-right">
     <div>
         <Link to="/home">
-          <button className="header-homefeed">
-            <p>Home Feed</p>
+          <button className="header-button">
+            <p>Home</p>
           </button>
         </Link>
 

@@ -1,0 +1,47 @@
+.splash-image {
+  background: image-url("ErinOKeefe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 1000px;
+  z-index: -1;
+}
+
+.splash-text {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 10px 0px;
+}
+
+.splash-text > h1 {
+  font-size: 32px;
+  margin: 30px 0px;
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.splash-text > h4 {
+  font-size: 16px;
+  margin: 30px 0px;
+}
+
+.splash-text > button {
+  padding: 10px;
+  // border: 2px solid $charcoal;
+  background: rgba(255, 255, 255, 0.15);
+  font-family: sans-serif;
+  font-size: 11px;
+  width: 75px;
+
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}

@@ -72,7 +72,7 @@ class SessionForm extends React.Component {
   }
 
   formButton() {
-    return (this.state.logIn) ? <h3>Log in</h3> : <h3>Sign up</h3>;
+    return (this.state.logIn) ? "Log in" : "Sign up";
   }
 
   switchForms() {
@@ -101,11 +101,11 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <nav className="login-signup">
+      <nav className="nav-right">
 
         <div className="header-group">
-          <button onClick={this.openModal.bind(this, true)}>Login</button>
-          <button onClick={this.openModal.bind(this, false)}>Sign up</button>
+          <button className="header-button" onClick={this.openModal.bind(this, true)}>Login</button>
+          <button className="header-button" onClick={this.openModal.bind(this, false)}>Sign up</button>
         </div>
 
         <Modal
@@ -120,9 +120,7 @@ class SessionForm extends React.Component {
             </div>
 
             <form className="login-form-box">
-                <br/>
               {this.formHeader()}
-                <br/>
               {this.renderErrors()}
 
               <div className="login-form">
@@ -146,8 +144,8 @@ class SessionForm extends React.Component {
                 </label>
 
                 <div className="session-button-container">
-                  <button onClick={this.handleSubmit}>{this.formButton()}</button>
-                  <button onClick={this.guestLogin}>Guest Demo</button>
+                  <button className="session-button" onClick={this.handleSubmit}>{this.formButton()}</button>
+                  <button className="session-button" onClick={this.guestLogin}>Guest</button>
                 </div>
                 <a href="/#" onClick={this.switchForms}>{this.switchButton()}</a>
               </div>

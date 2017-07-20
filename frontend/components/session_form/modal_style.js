@@ -11,14 +11,14 @@ const style = {
   },
   content : {
     position        : 'fixed',
-    top             : '50px',
+    // top             : '50px',
     // bottom          : '100px',
     margin          : 'auto',
     width           : '300px',
-    height          : '300px',
+    height          : '310px',
     // border          : '1px solid #ccc',
     border          : '1px solid #000',
-    padding         : '30px 50px',
+    // padding         : '30px 50px',
     zIndex          : 11,
 
     backgroundColor : '#ffffff',

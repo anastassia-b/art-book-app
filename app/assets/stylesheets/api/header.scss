@@ -1,0 +1,101 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $deep-red;
+  color: white;
+  padding: 10px;
+}
+
+.header-link {
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-right {
+  padding: 10px 20px;
+}
+
+.header-group {
+  padding: 0 20px;
+}
+
+.header-button {
+  padding: 0 10px;
+}
+
+.login-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form-box {
+  // outline: 1px solid black;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.login-input {
+  margin-top: 10px;
+  padding-left: 10px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: $light-gray;
+  outline: none;
+  border-radius: 3px;
+}
+
+.session-button-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.session-button {
+  // margin: 10px 0px;
+  // padding: 0 10px;
+  // height: 30px;
+  // border-radius: 3px;
+  // background: $deep-blue;
+  // color: white;
+  padding: 10px;
+  // border: 2px solid $charcoal;
+  background: rgba(255, 255, 255, 0.15);
+  font-family: sans-serif;
+  font-size: 11px;
+  width: 75px;
+
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+
+.session-errors {
+
+}
+
+p {}
+// .alternate-session {
+//   margin-top: 10px;
+//   color: $gray;
+//   font-size: 13px;
+//   text-align: center;
+// }

@@ -14,12 +14,13 @@ class Splash extends React.Component {
 
   render() {
     return (
-      <div className="splash-image">
+      <section className="splash-image">
         <section className="splash-text">
           <h1>Splash Text</h1>
+          <h4>More text</h4>
           <button onClick={this.guestLogin}>Demo</button>
         </section>
-      </div>
+      </section>
     );
   }
 }
