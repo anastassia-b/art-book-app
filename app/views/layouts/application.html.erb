@@ -3,9 +3,15 @@
   <head>
     <title>Baehance</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.cloudinary_options = {
+        cloud_name: '<%= ENV['CLOUD_NAME'] %>',
+        upload_preset: '<%= ENV['UPLOAD_PRESET']%>'
+      }
+    </script>
   </head>
 
   <body>

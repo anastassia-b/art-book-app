@@ -31,6 +31,5 @@
 |-------|-------------|
 | "/" | "SplashContainer" |
 | "/home" | "HomeContainer" |
-| "/projects" | "ProjectsIndex" |
 | "/projects/id" | "ProjectShow" |
 | "/users/id" | "ProfileShow" |
