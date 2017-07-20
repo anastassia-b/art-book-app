@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-content: center;
   width: 100%;
-  background-color: $deep-red;
+  background-color: $light-black;
   color: white;
   padding: 10px;
 }
@@ -30,6 +30,10 @@ header {
 
 .header-button {
   padding: 0 10px;
+}
+
+.header-button:hover {
+  text-decoration: underline;
 }
 
 .login-form-container {
@@ -68,14 +72,7 @@ header {
 }
 
 .session-button {
-  // margin: 10px 0px;
-  // padding: 0 10px;
-  // height: 30px;
-  // border-radius: 3px;
-  // background: $deep-blue;
-  // color: white;
   padding: 10px;
-  // border: 2px solid $charcoal;
   background: rgba(255, 255, 255, 0.15);
   font-family: sans-serif;
   font-size: 11px;
@@ -88,17 +85,26 @@ header {
   border-radius: 2px;
 }
 
+.session-button:hover {
+  background-color: $light-black;
+}
+
 .switch-forms {
   margin-top: 25px;
+  text-align: center;
+  // color: $gray;
+}
+
+.switch-forms:hover {
+  text-decoration: underline;
 }
 
 .session-errors {
-
+  font-size: 12px;
+  padding-bottom: 5px;
 }
 
-p {}
-// .alternate-session {
-//   margin-top: 10px;
+// p {
 //   color: $gray;
 //   font-size: 13px;
 //   text-align: center;
