@@ -4,4 +4,4 @@ Baehance is a portfolio showcase web application inspired by Behance. It is a fu
 
 [Live Demo!][heroku]
 
-[heroku]: http://www.baehance.herokuapp.com
+[heroku]: https://baehance.herokuapp.com/
