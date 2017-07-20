@@ -4,7 +4,7 @@
 
 [Trello link][trello]
 
-[heroku]: http://www.herokuapp.com
+[heroku]: http://www.baehance.herokuapp.com
 [trello]: https://trello.com/b/X5VG72uB/baehance
 
 ## Minimum Viable Product

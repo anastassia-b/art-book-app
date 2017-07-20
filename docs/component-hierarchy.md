@@ -1,25 +1,18 @@
 ## Component Hierarchy
 
-**AuthFormContainer**
- - AuthForm
+**SplashContainer**
+
+**SessionFormContainer**
+ - Modals:
   * Sign In
   * Sign Up
 
-**NewProjectModal**
-  * NewProjectForm
-
-**Header**
-  - Sign In/ Sign Up
-  - Logo
-  - New Project
-  - Search Bar
+**GreetingContainer**
+  * Sign In/ Sign Up
+  * Link to Homepage
 
 **HomeContainer**
-  * Header
   * ProjectsIndex
-    * ProjectItem
-      * ImagesIndex
-    * ProjectItemDetails
 
 **ProjectShowContainer**
   * ProjectItem
@@ -29,16 +22,15 @@
     * CommentsIndex
       * CommentItem
 
-**UserProfileContainer**
+**ProfileShowContainer**
+ * User Detail
 
 ## Routes
 
 |Path   | Component   |
 |-------|-------------|
+| "/" | "SplashContainer" |
 | "/home" | "HomeContainer" |
-| "/sign-up" | "AuthFormContainer" |
-| "/sign-in" | "AuthFormContainer" |
 | "/projects" | "ProjectsIndex" |
-| "/projects/new" | "NewProjectForm" |
 | "/projects/id" | "ProjectShow" |
 | "/users/id" | "ProfileShow" |

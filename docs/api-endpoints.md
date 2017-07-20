@@ -31,11 +31,11 @@
 ### Comments
 
 * GET /api/projects/:id/comments
-* POST /api/projects/:id/comments
+* POST /api/comments
 * DELETE /api/comments/:id
 
 ### Likes
 
 * GET /api/projects/:id/likes
-* POST /api/projects/:id/likes
+* POST /api/likes
 * DELETE /api/likes/:likeId
