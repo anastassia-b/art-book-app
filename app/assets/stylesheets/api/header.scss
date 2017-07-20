@@ -7,8 +7,6 @@ header {
   justify-content: space-between;
   align-content: center;
   width: 100%;
-  position: fixed;
-  top: 0;
   background-color: $deep-red;
   color: white;
   padding: 10px;
@@ -41,20 +39,21 @@ header {
 
 .login-form-box {
   // outline: 1px solid black;
-  padding: 20px;
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .login-form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 10px;
 }
 
 .login-input {
-  margin-top: 10px;
-  padding-left: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
   height: 30px;
   font-weight: bold;
   font-size: 14px;
@@ -65,8 +64,7 @@ header {
 
 .session-button-container {
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: space-between;
 }
 
 .session-button {
@@ -88,6 +86,10 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 2px;
+}
+
+.switch-forms {
+  margin-top: 25px;
 }
 
 .session-errors {

@@ -88,13 +88,12 @@ class SessionForm extends React.Component {
   emailInput() {
     if (!this.state.logIn) {
       return (
-        <label className="login-input">
-          <input type="text"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.update('email')}
-          />
-        </label>
+        <input type="text"
+          className="login-input"
+          placeholder="Email"
+          value={this.state.email}
+          onChange={this.update('email')}
+        />
       );
     }
   }
@@ -124,31 +123,35 @@ class SessionForm extends React.Component {
               {this.renderErrors()}
 
               <div className="login-form">
-
-                <label className="login-input">
-                  <input type="text"
-                    placeholder="Username"
-                    value={this.state.username}
-                    onChange={this.update('username')}
-                  />
-                </label>
+                <input type="text"
+                  className="login-input"
+                  placeholder="Username"
+                  value={this.state.username}
+                  onChange={this.update('username')}
+                />
 
                 {this.emailInput()}
 
-                <label className="login-input">
-                  <input type="password"
-                    placeholder="Password"
-                    value={this.state.password}
-                    onChange={this.update('password')}
-                  />
-                </label>
-
-                <div className="session-button-container">
-                  <button className="session-button" onClick={this.handleSubmit}>{this.formButton()}</button>
-                  <button className="session-button" onClick={this.guestLogin}>Guest</button>
-                </div>
-                <a href="/#" onClick={this.switchForms}>{this.switchButton()}</a>
+                <input type="password"
+                  className="login-input"
+                  placeholder="Password"
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                />
               </div>
+
+              <div className="session-button-container">
+                <button className="session-button" onClick={this.handleSubmit}>{this.formButton()}</button>
+                <button className="session-button" onClick={this.guestLogin}>Guest</button>
+              </div>
+
+              <a
+                href="/#"
+                className="switch-forms"
+                onClick={this.switchForms}
+              >
+                {this.switchButton()}
+              </a>
             </form>
           </div>
         </Modal>

@@ -6,17 +6,15 @@
   background-attachment: fixed;
   position: relative;
   height: 1000px;
-  z-index: -1;
 }
 
 .splash-text {
   color: white;
   text-align: center;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 10px 0px;
   width: 300px;
 }
 
