@@ -1,5 +1,6 @@
 User.destroy_all
 Project.destroy_all
+Image.destroy_all
 
 guest = User.create(username: "guest", email: "guest@example.com", password: "password")
 anastassia = User.create(username: "anastassia", email: "anastassia@example.com", password: "password")
@@ -43,3 +44,11 @@ project15 = Project.create(title: "solen", description: "Edvard Munch | Solen", 
 project16 = Project.create(title: "Il Parnasso", description: "Cy Towombly | Il Parnasso", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500610992/3_q7chvp.jpg", user_id: cy.id)
 project16 = Project.create(title: "autum rhythm", description: "Jackson Pollock | Autumn Rhythm", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500613637/autumn-rhythm_mnenc2.jpg", user_id: pollock.id)
 project16 = Project.create(title: "dame", description: "Francis Picabia | Dame!", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500613899/Francis_Picabia_2C_Dame_21_Illustration_for_the_cover_of_the_periodical_Dadaphone_n._7_2C_Paris_2C_March_1920_l5uuim.jpg", user_id: francis.id)
+
+
+image0 = Image.create(img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500599950/cylinder_ls_kibyeo.jpg",
+                      project_id: project0.id)
+image1 = Image.create(img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500599840/371363f63e89e9bec8cb818e0d2ca92b_anpdqp.jpg",
+                      project_id: project0.id)
+image2 = Image.create(img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500599920/blob_xpevvy.jpg",
+                      project_id: project0.id)

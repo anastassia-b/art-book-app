@@ -6,7 +6,7 @@ const Greeting = ({ currentUser, logout }) => (
     <div>
         <Link to="/home">
           <button className="header-button">
-            <p>Home</p>
+            <p>Explore</p>
           </button>
         </Link>
 
