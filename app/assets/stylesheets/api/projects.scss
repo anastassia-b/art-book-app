@@ -4,9 +4,13 @@
 
 .projects-list {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .project {
+  margin: 10px;
+}
+
+.project > img {
 
 }
