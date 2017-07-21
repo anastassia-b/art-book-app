@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { selectAllProjects } from '../../reducers/selectors';
 import { fetchProjects } from '../../actions/project_actions';
-import ProjectsIndex from './projects_index.jsx';
+import ProjectIndex from './project_index.jsx';
 
 const mapStateToProps = state => ({
   projects: selectAllProjects(state)
@@ -14,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ProjectsIndex);
+)(ProjectIndex);
