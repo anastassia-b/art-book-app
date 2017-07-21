@@ -10,6 +10,7 @@ class Api::ImagesController < ApplicationController
   #   end
   # end
 
+#Come back to this!
   def index
     if params[:project_id]
       @images = Project.find(params[:project_id]).images

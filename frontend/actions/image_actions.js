@@ -7,7 +7,7 @@ export const receiveImages = images => ({
   images
 });
 
-//pass parameter to fetchImages
+//pass parameter to fetchImages, check logic.
 export const fetchImages = (projectId) => dispatch => (
   APIUtil.fetchImages(projectId)
     .then(images => dispatch(receiveImages(images)))

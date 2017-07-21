@@ -7,6 +7,12 @@ class ImageIndex extends React.Component {
     this.props.fetchImages(projectId);
   }
 
+  componentWillReceiveProps() {
+    // pass state to index images
+    // component will recievce this.props.to rerender upon click
+
+  }
+
   render() {
     const images = this.props.images;
 
