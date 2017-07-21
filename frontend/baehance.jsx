@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
-import { fetchProjects, fetchProjectDetail } from './actions/project_actions';
+import { fetchImages } from './actions/image_actions';
 // import Modal from 'react-modal';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  window.fetchProjects = fetchProjects;
-  window.fetchProjectDetail = fetchProjectDetail;
+  window.fetchImages = fetchImages;
 
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={ store }/>, root);

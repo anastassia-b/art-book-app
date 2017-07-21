@@ -11,13 +11,11 @@ class Api::ImagesController < ApplicationController
   # end
 
   def index
-    # if params[:project_id]
-    #   @images = Project.find(params[:project_id]).images
-    # else
-    #   @images = Image.all
-    # end
-    @images = Image.all
-    render :index
+    if params[:project_id]
+      @images = Project.find(params[:project_id]).images
+    else
+      @images = Image.all
+    end
   end
 
   def show
