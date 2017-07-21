@@ -12,10 +12,11 @@ class ProjectIndex extends React.Component {
     return (
       <ul className="projects-list">
         {projects.map((project, idx) => (
-          <div className= "project" key={project.id}>
+          <div className="project" key={project.id}>
             <Link to={`/projects/${project.id}`}>
               <img src={project.thumbnail_url}/>
             </Link>
+            <span className="project-title">{project.title}</span>
           </div>
         ))}
       </ul>

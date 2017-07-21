@@ -14,8 +14,8 @@ Baehance is a portfolio showcase web application inspired by Behance-- built wit
 1. Hosting on Heroku
 2. Production README
 3. Account Management with Demo option
-4. Portfolio Viewing
-5. Explore Portfolios
+4. Explore All Portfolios
+5. Portfolio Viewing
 6. Likes
 7. Comments
 
@@ -38,27 +38,29 @@ Baehance is a portfolio showcase web application inspired by Behance-- built wit
 
 **Objective:** To have a functioning rails project with front end authentication.
 
-### Phase 2: Project Model, API, and Components (2 days)
+### Phase 2: Project Model, API, and Components (1 day)
 
-**Objective:** Each user has a portfolio, which hosts many projects. Projects can be created, read, edited, and destroyed through the API.
+**Objective:** Each user has a portfolio, which hosts many projects. Projects can be viewed from the home index page.
 
-### Phase 3: Project Content (Images) (2 days)
+### Phase 3: Project Content (1 day)
 
-**Objective:** Each project can have many images, which can be created, read, edited, and destroyed through the API.
+**Objective:** Each project has a description and can have many images. Viewing a project opens a modal which displays the full content.
 
-### Phase 4: Project Likes (1 day)
+### Phase 4: User Profiles (2 days) (by W9D2 evening)
 
-**Objective:** A user can like projects.
+**Objective:** Each user has a profile which showcases their projects.
 
-### Phase 5: Project Comments (2 days)
+### Phase 5: Project Likes (1 day)
 
-**Objective:** Users can comment on projects.
+**Objective:** A user can like projects. This is visible both on the project and on the user's profile.
 
-### Phase 6: Additional Styling (1 day)
+### Phase 6: Project Comments (1 day) (by W9D4 evening)
 
-**Objective:** To make a bae-utiful landing page, with infinite scroll of projects.
+**Objective:** Users can comment on each others projects.
+
 
 ### Bonus Features
 - [ ] Follows: Users can follow each other.
 - [ ] Views: Project views and user views can be quantified.
 - [ ] Tags: Projects can be categorized.
+- [ ] Create Projects: Projects can be created, edited, read, and destroyed through the API.
