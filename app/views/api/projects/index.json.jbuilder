@@ -4,6 +4,6 @@
     json.title project.title
     json.description project.description
     json.thumbnail_url project.thumbnail_url
-    json.user project.user_id
+    json.user_id project.user_id
   end
 end

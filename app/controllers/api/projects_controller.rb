@@ -1,5 +1,15 @@
 class Api::ProjectsController < ApplicationController
 
+  # def index
+  #   if params[:user_id]
+  #     @projects = User.find(params[:user_id]).projects
+  #   elsif params[:current_user]
+  #     @projects = current_user.projects
+  #   else
+  #     @projects = Project.all
+  #   end
+  # end
+
   def index
     # cloud_name = ENV['CLOUD_NAME']
     # # upload_preset = ENV['UPLOAD_PRESET']
