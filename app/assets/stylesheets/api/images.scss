@@ -1,3 +1,18 @@
 // Place all the styles related to the api/images controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.images-list {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+}
+
+.image {
+  margin: 10px;
+}
+
+.image-caption {
+  display: flex;
+  justify-content: center;
+}
