@@ -9,7 +9,7 @@ email           | string    | not null, indexed, unique
 password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
 avatar_url    | string    | default: (url to guest image)
-description | string | 
+description | string |
 
 ## projects
 column name | data type | details
@@ -25,7 +25,7 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 img_url     | string    | not null
-caption     | text      |
+caption     | string    |
 project_id  | integer   | not null, foreign key (references projects), indexed
 
 ## likes
