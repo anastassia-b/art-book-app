@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import style from './modal_style';
 
-// import ImageIndexContainer from '../images/images_index_container';
+import ImageIndexContainer from '../images/image_index_container';
 
 class ProjectDetail extends React.Component {
   constructor(props) {
@@ -49,8 +49,7 @@ class ProjectDetail extends React.Component {
           <div className="x-button">
             <button onClick={this.closeModal}><i aria-hidden="true"></i></button>
           </div>
-
-          HELLO
+          <ImageIndexContainer />
         </Modal>
       </div>
     );
@@ -59,5 +58,3 @@ class ProjectDetail extends React.Component {
 }
 
 export default ProjectDetail;
-
-// <ImageIndexContainer projectId={project.id} />

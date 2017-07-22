@@ -21,11 +21,3 @@ class ProjectIndex extends React.Component {
 }
 
 export default ProjectIndex;
-//wont have Link anymore!
-// <div className="project" key={project.id}>
-//
-//   <Link to={`/projects/${project.id}`}>
-//     <img src={project.thumbnail_url}/>
-//   </Link>
-//   <span className="project-title">{project.title}</span>
-// </div>

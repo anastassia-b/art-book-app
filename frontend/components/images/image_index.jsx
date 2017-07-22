@@ -8,9 +8,9 @@ class ImageIndex extends React.Component {
   }
 
   componentWillReceiveProps() {
+    //Todo:
     // pass state to index images
     // component will recievce this.props.to rerender upon click
-
   }
 
   render() {
