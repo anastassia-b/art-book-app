@@ -63,6 +63,7 @@ class SessionForm extends React.Component {
   }
 
   openModal(bool) {
+    this.props.clearErrors();
     this.setState({
       modalOpen: true,
       logIn: bool
@@ -78,6 +79,7 @@ class SessionForm extends React.Component {
   }
 
   switchForms() {
+    this.props.clearErrors();
     this.setState({
       logIn: !this.state.logIn
     });

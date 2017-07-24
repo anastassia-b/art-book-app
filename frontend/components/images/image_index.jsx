@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 class ImageIndex extends React.Component {
   componentDidMount() {
     const project_id = this.props.project.id;
-    console.log(project_id);
     this.props.fetchImages({project_id});
   }
 

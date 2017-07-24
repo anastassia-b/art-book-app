@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import style from './modal_style';
 
 import ImageIndexContainer from '../images/image_index_container';
-import ProjectInfo from './project_info';
+import ProjectInfoContainer from './project_info_container.js';
 
 class ProjectDetail extends React.Component {
   constructor(props) {
@@ -53,7 +53,7 @@ class ProjectDetail extends React.Component {
           </div>
           <div className="project-detail">
             <ImageIndexContainer project={project}/>
-            <ProjectInfo project={project}/>
+            <ProjectInfoContainer project={project}/>
           </div>
         </Modal>
       </div>

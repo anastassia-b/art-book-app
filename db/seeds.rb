@@ -183,25 +183,25 @@ Image.create(project_id: project4.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500875680/b67059568f59dfec536371fb0e3b9e32_ldpnvf.jpg")
 
 project15 = Project.create(title: "solen", description: "Edvard Munch | Solen", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500610605/Munchs_20Solen_evfwtg.jpg", user_id: munch.id)
-Image.create(project_id: project15, caption: "",
+Image.create!(project_id: project15.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500610605/Munchs_20Solen_evfwtg.jpg")
 
 
-project16 = Project.create(title: "Il Parnasso", description: "Cy Towombly | Il Parnasso", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500610992/3_q7chvp.jpg", user_id: cy.id)
-Image.create(project_id: project16, caption: "",
+project16 = Project.create!(title: "Il Parnasso", description: "Cy Towombly | Il Parnasso", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500610992/3_q7chvp.jpg", user_id: cy.id)
+Image.create!(project_id: project16.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500610992/3_q7chvp.jpg")
-Image.create(project_id: project16, caption: "",
+Image.create!(project_id: project16.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500875901/039a548734f119b90b88ce781ebb3141_vnkupw.jpg")
-Image.create(project_id: project16, caption: "",
+Image.create!(project_id: project16.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500875924/db7ea7688ae6a74447673b6f1b183d47_mali1i.jpg")
 
 
-project17 = Project.create(title: "autumn rhythm", description: "Jackson Pollock | Autumn Rhythm", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500613637/autumn-rhythm_mnenc2.jpg", user_id: pollock.id)
-Image.create(project_id: project17, caption: "",
+project17 = Project.create!(title: "autumn rhythm", description: "Jackson Pollock | Autumn Rhythm", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500613637/autumn-rhythm_mnenc2.jpg", user_id: pollock.id)
+Image.create!(project_id: project17.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500613637/autumn-rhythm_mnenc2.jpg")
-Image.create(project_id: project17, caption: "",
+Image.create!(project_id: project17.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500876011/fb188a52914265d7c02d1fe18120f997_cdu9qs.jpg")
-Image.create(project_id: project17, caption: "",
+Image.create!(project_id: project17.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500876029/d00f634c7d804f07a8cdbfc667dbaef2_eaa1ho.jpg")
 
 
