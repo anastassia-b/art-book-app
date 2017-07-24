@@ -3,45 +3,45 @@ Project.destroy_all
 Image.destroy_all
 
 guest = User.create(username: "guest", email: "guest@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "https://lh4.ggpht.com/cfo9ApPG_DfKZ139O84XUGem1aXZL3cIGw9jB4cGpUprGNeEMav5TLBfq8sEZc8mHeY=w300")
 anastassia = User.create(username: "anastassia", email: "anastassia@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 david = User.create(username: "david", email: "david@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 basquiat = User.create(username: "basquiat", email: "basquiat@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 mondrian = User.create(username: "mondrian", email: "mondrian@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 robert = User.create(username: "robert", email: "robert@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 karl = User.create(username: "karl", email: "karl@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 maiko = User.create(username: "maiko", email: "maiko@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 onchi = User.create(username: "onchi", email: "onchi@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 kelly = User.create(username: "kelly", email: "kelly@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 louise = User.create(username: "louise", email: "louise@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 wayne = User.create(username: "wayne", email: "wayne@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 rothko = User.create(username: "rothko", email: "rothko@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 egon = User.create(username: "egon", email: "egon@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 whistler = User.create(username: "whistler", email: "whistler@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 michele = User.create(username: "michele", email: "michele@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 munch = User.create(username: "munch", email: "munch@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 cy = User.create(username: "cy", email: "cy@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 pollock = User.create(username: "pollock", email: "pollock@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 francis = User.create(username: "francis", email: "francis@example.com", password: "password",
-avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+avatar_url: "http://www.iconsdb.com/icons/preview/red/square-ios-app-xxl.png")
 
 
 project0 = Project.create(user_id: maiko.id, title: "architecture", description: "Maiko Gubler | About Making Architecture",

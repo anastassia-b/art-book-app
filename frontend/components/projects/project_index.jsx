@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ProjectDetail from './project_detail';
 
 class ProjectIndex extends React.Component {

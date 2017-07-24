@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
 class ProjectInfo extends React.Component {
   componentDidMount() {
@@ -11,11 +12,13 @@ class ProjectInfo extends React.Component {
     const user = this.props.user;
 
     return (
-    <div className="project-info">
-      {user.avatar_url}
-    </div>
+    <aside className="project-info">
+      <Link to={`/users/${user.id}`}>
+        <img className="avatar" src={user.avatar_url}/>
+      </Link>
+    </aside>
     );
   }
 }
 
-export default ProjectInfo;
+export default withRouter(ProjectInfo);
