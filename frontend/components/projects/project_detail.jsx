@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import style from './modal_style';
 
 import ImageIndexContainer from '../images/image_index_container';
+import ProjectInfo from './project_info';
 
 class ProjectDetail extends React.Component {
   constructor(props) {
@@ -28,7 +29,7 @@ class ProjectDetail extends React.Component {
     this.setState({ modalOpen: true });
   }
 
-  render () {
+  render() {
     const project = this.props.project;
 
     return (
@@ -49,7 +50,10 @@ class ProjectDetail extends React.Component {
           <div className="x-button">
             <button onClick={this.closeModal}><i aria-hidden="true"></i></button>
           </div>
-          <ImageIndexContainer />
+          <div className="project-detail">
+            <ImageIndexContainer />
+            <ProjectInfo project={project}/>
+          </div>
         </Modal>
       </div>
     );

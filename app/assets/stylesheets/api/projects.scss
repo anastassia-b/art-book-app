@@ -2,18 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.project-detail {
+  display: flex;
+}
+
+.project-info {
+  background-color: $background;
+}
+
 .projects-list {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: $background;
 }
 
 .project {
   margin: 10px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .project > img {
-
+  border-radius: 5px;
 }
 
 .project-title {
@@ -21,4 +32,19 @@
   justify-content: center;
   font-weight: bold;
   padding: 10px;
+}
+
+.images-list {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+}
+
+.image {
+  margin: 10px;
+}
+
+.image-caption {
+  display: flex;
+  justify-content: center;
 }
