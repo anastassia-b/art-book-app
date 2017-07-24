@@ -74,9 +74,9 @@ Image.create(project_id: project8.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500872095/a740e51ddfb1f9e3298aab3b2bab13f1_vuvgqe.jpg")
 
 
-project9 = Project.create(title: "accordion", description: "Louise Bourgeois | Insomnia drawings", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500605339/illusbourgeois_motnin.jpg", user_id: louise.id)
-Image.create(project_id: project9.id, caption: "",
-img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500605339/illusbourgeois_motnin.jpg")
+# project9 = Project.create(title: "accordion", description: "Louise Bourgeois | Insomnia drawings", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500605339/illusbourgeois_motnin.jpg", user_id: louise.id)
+# Image.create(project_id: project9.id, caption: "",
+# img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500605339/illusbourgeois_motnin.jpg")
 # Image.create(project_id: project9.id, caption: "",
 # img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500872297/Louise_18_olk9a1.jpg")
 
@@ -138,10 +138,8 @@ img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v150087
 project2 = Project.create(title: "orange cloud", description: "Piet Mondrian | Orange Cloud", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500590558/tumblr_mlti98EBYE1ru2qa4o1_1280_s9wp8e.png", user_id: mondrian.id)
 Image.create(project_id: project2.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500590558/tumblr_mlti98EBYE1ru2qa4o1_1280_s9wp8e.png")
-project2 = Project.create(title: "orange cloud", description: "Piet Mondrian | Orange Cloud", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500590558/tumblr_mlti98EBYE1ru2qa4o1_1280_s9wp8e.png", user_id: mondrian.id)
 Image.create(project_id: project2.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500875242/107b4b2729309c8fd5d29eb9c648f43c_rjrkjv.jpg")
-project2 = Project.create(title: "orange cloud", description: "Piet Mondrian | Orange Cloud", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500590558/tumblr_mlti98EBYE1ru2qa4o1_1280_s9wp8e.png", user_id: mondrian.id)
 Image.create(project_id: project2.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500875260/6365540_mondrian8_lp2zuq.jpg")
 
