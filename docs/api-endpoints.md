@@ -12,7 +12,6 @@
 
 * GET /api/users/:userId
 * POST /api/users
-* PATCH /api/users/:userId
 
 ### Session
 

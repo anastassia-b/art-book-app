@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
-import { fetchImages } from './actions/image_actions';
+import { fetchUser } from './util/users_api_util';
 // import Modal from 'react-modal';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  window.fetchImages = fetchImages;
+  window.fetchUser = fetchUser;
 
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={ store }/>, root);
