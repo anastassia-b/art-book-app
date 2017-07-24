@@ -16,6 +16,10 @@ class ProjectInfo extends React.Component {
       <Link to={`/users/${user.id}`}>
         <img className="avatar" src={user.avatar_url}/>
       </Link>
+      <div className="about">
+        <h3>{user.username}</h3>
+        <p>{project.description}</p>
+      </div>
     </aside>
     );
   }

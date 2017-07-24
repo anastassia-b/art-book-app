@@ -7,11 +7,26 @@
 }
 
 .project-info {
+  flex: 1;
   background-color: $background;
+  display: flex;
+  flex-direction: column;
 }
 
 .avatar {
   border-radius: 150px;
+}
+
+.about {
+  padding: 10px;
+}
+
+h3 {
+
+}
+
+p {
+
 }
 
 .projects-list {
@@ -39,9 +54,12 @@
 }
 
 .images-list {
+  flex: 3;
   display: flex;
   flex-direction: column;
   width: 680px;
+  overflow: auto;
+  height: 88vh;
 }
 
 .image {
