@@ -17,8 +17,9 @@ class ProjectDetail extends React.Component {
   }
 
   componentDidMount() {
-    // const projectId = {projectId: 102};
-    // this.props.fetchImages(projectId);
+    // const project = this.props.project;
+    // const project_id = project.id;
+    // this.props.fetchImages(project_id);
   }
 
   closeModal() {
@@ -51,7 +52,7 @@ class ProjectDetail extends React.Component {
             <button onClick={this.closeModal}><i aria-hidden="true"></i></button>
           </div>
           <div className="project-detail">
-            <ImageIndexContainer />
+            <ImageIndexContainer project={project}/>
             <ProjectInfo project={project}/>
           </div>
         </Modal>

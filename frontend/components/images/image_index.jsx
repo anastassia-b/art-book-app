@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 class ImageIndex extends React.Component {
   componentDidMount() {
-    const projectId = {projectId: 102};
-    this.props.fetchImages(projectId);
+    const project_id = this.props.project.id;
+    console.log(project_id);
+    this.props.fetchImages({project_id});
   }
 
   componentWillReceiveProps() {
