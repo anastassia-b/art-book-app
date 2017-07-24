@@ -2,26 +2,46 @@ User.destroy_all
 Project.destroy_all
 Image.destroy_all
 
-guest = User.create(username: "guest", email: "guest@example.com", password: "password")
-anastassia = User.create(username: "anastassia", email: "anastassia@example.com", password: "password")
-david = User.create(username: "david", email: "david@example.com", password: "password")
-basquiat = User.create(username: "basquiat", email: "basquiat@example.com", password: "password")
-mondrian = User.create(username: "mondrian", email: "mondrian@example.com", password: "password")
-robert = User.create(username: "robert", email: "robert@example.com", password: "password")
-karl = User.create(username: "karl", email: "karl@example.com", password: "password")
-maiko = User.create(username: "maiko", email: "maiko@example.com", password: "password")
-onchi = User.create(username: "onchi", email: "onchi@example.com", password: "password")
-kelly = User.create(username: "kelly", email: "kelly@example.com", password: "password")
-louise = User.create(username: "louise", email: "louise@example.com", password: "password")
-wayne = User.create(username: "wayne", email: "wayne@example.com", password: "password")
-rothko = User.create(username: "rothko", email: "rothko@example.com", password: "password")
-egon = User.create(username: "egon", email: "egon@example.com", password: "password")
-whistler = User.create(username: "whistler", email: "whistler@example.com", password: "password")
-michele = User.create(username: "michele", email: "michele@example.com", password: "password")
-munch = User.create(username: "munch", email: "munch@example.com", password: "password")
-cy = User.create(username: "cy", email: "cy@example.com", password: "password")
-pollock = User.create(username: "pollock", email: "pollock@example.com", password: "password")
-francis = User.create(username: "francis", email: "francis@example.com", password: "password")
+guest = User.create(username: "guest", email: "guest@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+anastassia = User.create(username: "anastassia", email: "anastassia@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+david = User.create(username: "david", email: "david@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+basquiat = User.create(username: "basquiat", email: "basquiat@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+mondrian = User.create(username: "mondrian", email: "mondrian@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+robert = User.create(username: "robert", email: "robert@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+karl = User.create(username: "karl", email: "karl@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+maiko = User.create(username: "maiko", email: "maiko@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+onchi = User.create(username: "onchi", email: "onchi@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+kelly = User.create(username: "kelly", email: "kelly@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+louise = User.create(username: "louise", email: "louise@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+wayne = User.create(username: "wayne", email: "wayne@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+rothko = User.create(username: "rothko", email: "rothko@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+egon = User.create(username: "egon", email: "egon@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+whistler = User.create(username: "whistler", email: "whistler@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+michele = User.create(username: "michele", email: "michele@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+munch = User.create(username: "munch", email: "munch@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+cy = User.create(username: "cy", email: "cy@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+pollock = User.create(username: "pollock", email: "pollock@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
+francis = User.create(username: "francis", email: "francis@example.com", password: "password",
+avatar_url: "http://www.hyperspin-fe.com/uploads/set_resources_2/84c1e40ea0e759e3f1505eb1788ddf3c_default_photo.png")
 
 
 project0 = Project.create(user_id: maiko.id, title: "architecture", description: "Maiko Gubler | About Making Architecture",
