@@ -11,6 +11,8 @@
   background-color: $background;
   display: flex;
   flex-direction: column;
+  padding: 5px;
+  margin: 0px 10px;
 }
 
 .avatar {
@@ -42,8 +44,9 @@ p {
   border-radius: 5px;
 }
 
-.project > img {
-  border-radius: 5px;
+.thumbnail:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .project-title {
@@ -63,7 +66,7 @@ p {
 }
 
 .image {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .image-caption {

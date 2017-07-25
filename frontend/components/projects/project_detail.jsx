@@ -37,7 +37,7 @@ class ProjectDetail extends React.Component {
       <div>
         <div className="project" key={project.id}>
           <section onClick={this.openModal.bind(this)}>
-            <img src={project.thumbnail_url}/>
+            <img className="thumbnail" src={project.thumbnail_url}/>
           </section>
           <span className="project-title">{project.title}</span>
         </div>

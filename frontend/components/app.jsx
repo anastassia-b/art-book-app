@@ -15,6 +15,7 @@ const App = () => (
       <Link to="/home" className="header-link"><h1>Baehance</h1></Link>
       <AuthRoute path="/" component={SessionFormContainer} />
       <ProtectedRoute path="/home" component={GreetingContainer} />
+      <ProtectedRoute path={`/users/:id`} component={GreetingContainer} />
     </header>
 
     <main className="main">
