@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 import style from './modal_style';
-
+import { Link } from 'react-router-dom';
 import ImageIndexContainer from '../images/image_index_container';
 import ProjectInfoContainer from './project_info_container.js';
 
@@ -39,8 +39,11 @@ class ProjectDetail extends React.Component {
           <section onClick={this.openModal.bind(this)}>
             <img className="thumbnail" src={project.thumbnail_url}/>
           </section>
-          <span className="project-title">{project.title}</span>
-        </div>
+          <section className="thumbnail-info">
+            <span className="project-title">{project.title}</span>
+            <span className="artist-name">artist {project.user_id}</span>
+          </section>
+      </div>
 
         <Modal
           contentLabel="Modal"
@@ -63,3 +66,5 @@ class ProjectDetail extends React.Component {
 }
 
 export default ProjectDetail;
+
+// <Link to={`/users/${project.user_id}`} className="artist-name">artist {project.user_id}</Link>

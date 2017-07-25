@@ -16,7 +16,7 @@
 }
 
 .avatar {
-  border-radius: 150px;
+  border-radius: 200px;
 }
 
 .about {
@@ -36,10 +36,11 @@ p {
   justify-content: center;
   flex-flow: row wrap;
   background-color: $background;
+  padding-top: 20px;
 }
 
 .project {
-  margin: 10px;
+  margin: 20px;
   background-color: white;
   border-radius: 5px;
 }
@@ -49,12 +50,28 @@ p {
   cursor: pointer;
 }
 
+.thumbnail-info {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+}
+
 .project-title {
   display: flex;
   justify-content: center;
   font-weight: bold;
   padding: 10px;
 }
+
+.artist-name {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 10px 0px;
+}
+
+// .artist-name:hover {
+//   text-decoration: underline
+// }
 
 .images-list {
   flex: 3;

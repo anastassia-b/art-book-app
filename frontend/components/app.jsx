@@ -13,14 +13,15 @@ import Footer from './footer/footer';
 const App = () => (
   <div>
     <header>
-      <Link to="/home" className="header-link"><h1>Baehance</h1></Link>
+      <Link to="/" className="header-link"><h1>Baehance</h1></Link>
       <AuthRoute path="/" component={SessionFormContainer} />
       <ProtectedRoute path="/home" component={GreetingContainer} />
       <ProtectedRoute path={`/users/:id`} component={GreetingContainer} />
     </header>
 
     <main className="main">
-      <AuthRoute path="/" component={SplashContainer} />
+      <Route exact path="/" component={SplashContainer} />
+      <Route exact path="/home" component={SplashContainer} />
       <ProtectedRoute path="/home" component={ProjectIndexContainer} />
       <ProtectedRoute path={`/users/:id`} component={UserProfileContainer} />
     </main>

@@ -16,9 +16,11 @@ header {
   font-size: 32px;
   text-decoration: none;
   padding: 10px;
-  // font-weight: bold;
-  // letter-spacing: 3px;
   color: white;
+}
+
+.header-link:hover {
+  color: $dark-white;
 }
 
 .nav-right {
@@ -38,6 +40,7 @@ header {
 
 .header-button:hover {
   text-decoration: underline;
+  color: $dark-white;
 }
 
 .login-form-container {

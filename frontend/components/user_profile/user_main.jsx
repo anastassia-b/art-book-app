@@ -11,9 +11,10 @@ class UserMain extends React.Component {
 
     return (
       <main className="user-main">
+        <h4 className="image-header">Images</h4>
         <ul className="image-grid">
           {images.map((image, idx) => (
-            <li key={image.id}>
+            <li className="image" key={image.id}>
               <img src={image.img_url}/>
             </li>
           ))}

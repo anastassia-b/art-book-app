@@ -130,11 +130,11 @@ Image.create(project_id: project13.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500874510/adcf2e915d785df95c8bb22e9c5c030c_iic1bn.jpg")
 
 
-project14 = Project.create(title: "untitled", description: "Mixed Media (Untitled)", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500606868/8c866a28f5e0e74632344d47127127da_goawcl.jpg", user_id: michele.id)
-Image.create(project_id: project14.id, caption: "",
-img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500606868/8c866a28f5e0e74632344d47127127da_goawcl.jpg")
-Image.create(project_id: project14.id, caption: "",
-img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500874685/06BeyondReturn-HiRes_cokcsw.jpg")
+# project14 = Project.create(title: "untitled", description: "Mixed Media (Untitled)", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500606868/8c866a28f5e0e74632344d47127127da_goawcl.jpg", user_id: michele.id)
+# Image.create(project_id: project14.id, caption: "",
+# img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500606868/8c866a28f5e0e74632344d47127127da_goawcl.jpg")
+# Image.create(project_id: project14.id, caption: "",
+# img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500874685/06BeyondReturn-HiRes_cokcsw.jpg")
 
 
 project5 = Project.create(title: "flowers", description: "Flowers", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500604706/fd0ea2c03246d83b135b6d061581b2d9_t035wq.jpg", user_id: mondrian.id)
@@ -196,13 +196,13 @@ Image.create!(project_id: project16.id, caption: "",
 img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500875924/db7ea7688ae6a74447673b6f1b183d47_mali1i.jpg")
 
 
-project17 = Project.create!(title: "autumn rhythm", description: "Autumn Rhythm", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500613637/autumn-rhythm_mnenc2.jpg", user_id: pollock.id)
-Image.create!(project_id: project17.id, caption: "",
-img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500613637/autumn-rhythm_mnenc2.jpg")
-Image.create!(project_id: project17.id, caption: "",
-img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500876011/fb188a52914265d7c02d1fe18120f997_cdu9qs.jpg")
-Image.create!(project_id: project17.id, caption: "",
-img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500876029/d00f634c7d804f07a8cdbfc667dbaef2_eaa1ho.jpg")
+# project17 = Project.create!(title: "autumn rhythm", description: "Autumn Rhythm", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500613637/autumn-rhythm_mnenc2.jpg", user_id: pollock.id)
+# Image.create!(project_id: project17.id, caption: "",
+# img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500613637/autumn-rhythm_mnenc2.jpg")
+# Image.create!(project_id: project17.id, caption: "",
+# img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500876011/fb188a52914265d7c02d1fe18120f997_cdu9qs.jpg")
+# Image.create!(project_id: project17.id, caption: "",
+# img_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_scale,w_680/v1500876029/d00f634c7d804f07a8cdbfc667dbaef2_eaa1ho.jpg")
 
 
 # project18 = Project.create(title: "dame", description: "Francis Picabia | Dame!", thumbnail_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500613899/Francis_Picabia_2C_Dame_21_Illustration_for_the_cover_of_the_periodical_Dadaphone_n._7_2C_Paris_2C_March_1920_l5uuim.jpg", user_id: francis.id)

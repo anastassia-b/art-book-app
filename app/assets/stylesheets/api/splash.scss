@@ -48,7 +48,7 @@
 .footer {
   background: $light-black;
   color: white;
-  margin-top: 10px;
+  // margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -90,8 +90,6 @@
 }
 
 .foot-right a:hover {
-  // background-color: black;
-  // color: $linen;
-  // font-weight: normal;
   text-decoration: underline;
+  color: $dark-white;
 }
