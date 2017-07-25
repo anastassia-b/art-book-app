@@ -15,13 +15,14 @@ header {
 .header-link {
   font-size: 32px;
   text-decoration: none;
+  padding: 10px;
   // font-weight: bold;
   // letter-spacing: 3px;
   color: white;
 }
 
 .nav-right {
-  padding: 10px 20px;
+  padding: 10px 10px 0px 0px;
 }
 
 .header-group {
@@ -29,7 +30,9 @@ header {
 }
 
 .header-button {
-  padding: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .header-button:hover {
@@ -103,9 +106,3 @@ header {
   font-size: 12px;
   padding-bottom: 5px;
 }
-
-// p {
-//   color: $gray;
-//   font-size: 13px;
-//   text-align: center;
-// }

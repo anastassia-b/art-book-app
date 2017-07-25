@@ -1,18 +1,18 @@
-.splash-image {
+.parallax {
   background: image-url("ErinOKeefe.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
-  height: 1000px;
+  // position: relative;
+  height: 800px;
 }
 
 .splash-text {
   color: white;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
@@ -43,4 +43,54 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   border-radius: 2px;
+}
+
+.footer {
+  background: $light-black;
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot-right,
+.foot-left {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.foot-left {
+  width: 500px
+}
+
+.foot-left h1,
+.foot-left p {
+  margin: 10px;
+  padding: 0px;
+}
+
+.foot-left h1 {
+  text-transform: uppercase;
+}
+
+.foot-left p {
+  font-size: 14px;
+}
+
+.foot-right a {
+  font-size: 12px;
+  // font-weight: bold;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.foot-right a:hover {
+  // background-color: black;
+  // color: $linen;
+  // font-weight: normal;
+  text-decoration: underline;
 }

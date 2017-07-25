@@ -14,7 +14,7 @@ class Splash extends React.Component {
 
   render() {
     return (
-      <section className="splash-image">
+      <section className="parallax">
         <section className="splash-text">
           <h1>Art Portfolio</h1>
           <h4>All your favorite art, all in one place. Showcase creative work and discover pieces from past and present.</h4>
