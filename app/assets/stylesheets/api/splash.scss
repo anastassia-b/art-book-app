@@ -1,5 +1,5 @@
 .parallax {
-  background: image-url("ErinOKeefe.jpg");
+  background-image: url("http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501007543/ErinOKeefe_nyo9vk.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,9 +60,9 @@
   margin: 10px;
 }
 
-.foot-left {
-  width: 500px
-}
+// .foot-left {
+//   width: 500px
+// }
 
 .foot-left h1,
 .foot-left p {
@@ -76,6 +76,7 @@
 
 .foot-left p {
   font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .foot-right a {
