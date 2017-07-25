@@ -1,11 +1,8 @@
 import React from 'react';
 import UserDetail from './user_detail';
-import UserMain from './user_main';
+import UserMainContainer from './user_main_container';
 
 class UserProfile extends React.Component {
-  // componentDidMount() {
-  //   this.props.fetchUser();
-  // }
 
   render() {
     const user = this.props.user;
@@ -13,7 +10,7 @@ class UserProfile extends React.Component {
     return (
       <div className="user-profile">
         <UserDetail user={user} />
-        <UserMain user={user} />
+        <UserMainContainer user={user} />
       </div>
     );
   }
