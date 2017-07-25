@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import ImageIndex from './image_index';
-import { fetchImages } from '../../actions/image_actions';
+import { fetchImages, clearImages } from '../../actions/image_actions';
 import { selectImages } from '../../reducers/selectors';
 
 const mapStateToProps = (state) => ({
@@ -8,7 +8,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchImages: id => dispatch(fetchImages(id))
+  fetchImages: id => dispatch(fetchImages(id)),
+  clearImages: () => dispatch(clearImages())
 });
 
 export default connect(
