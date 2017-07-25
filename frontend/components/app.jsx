@@ -8,6 +8,7 @@ import GreetingContainer from './greeting/greeting_container';
 import SplashContainer from './splash/splash_container';
 import ProjectIndexContainer from './projects/project_index_container';
 import UserProfileContainer from './user_profile/user_profile_container';
+import Footer from './footer/footer';
 
 const App = () => (
   <div>
@@ -24,21 +25,7 @@ const App = () => (
       <ProtectedRoute path={`/users/:id`} component={UserProfileContainer} />
     </main>
 
-    <Route exact path="/"
-      render={ () =>
-        <footer className="footer">
-          <section className="foot-left">
-            <h1>About</h1>
-            <p>Baehance is a portfolio showcase web application inspired by Behance.</p>
-          </section>
-          <section className="foot-right">
-            <a href="https://github.com/anastassia-b">Github</a>
-            <a href="https://www.linkedin.com/in/anastassia-bobokalonova-mit">LinkedIn</a>
-            <a href="mailto:email.anastassia@gmail.com">Contact</a>
-          </section>
-        </footer>
-      }
-    />
+    <Route path="/" render={Footer}/>
   </div>
 );
 
