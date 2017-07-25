@@ -1,19 +1,9 @@
 class Api::ImagesController < ApplicationController
-
-  # def index
-  #   if params[:user_id]
-  #     @images = User.find(params[:user_id]).images
-  #   elsif params[:current_user]
-  #     @images = current_user.images
-  #   else
-  #     @images = Image.all
-  #   end
-  # end
-
-#Come back to this!
   def index
     if params[:project_id]
       @images = Project.find(params[:project_id]).images
+    elsif params[:user_id]
+      @images = User.find(params[:user_id]).images
     else
       @images = Image.all
     end
@@ -26,6 +16,6 @@ class Api::ImagesController < ApplicationController
   private
 
   def image_params
-    params.require(:image).permit(:img_url, :caption, :project_id)
+    params.require(:image).permit(:img_url, :caption, :project_id, :user_id)
   end
 end

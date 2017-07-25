@@ -19,10 +19,10 @@ class ImageIndex extends React.Component {
     return (
       <ul className="images-list">
         {images.map((image, idx) => (
-          <div className="image" key={image.id}>
+          <li className="image" key={image.id}>
             <img src={image.img_url}/>
             <span className="image-caption">{image.caption}</span>
-          </div>
+          </li>
         ))}
       </ul>
     );
