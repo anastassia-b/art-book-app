@@ -7,7 +7,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import GreetingContainer from './greeting/greeting_container';
 import SplashContainer from './splash/splash_container';
 import ProjectIndexContainer from './projects/project_index_container';
-import ImageIndexContainer from './images/image_index_container';
+import UserProfileContainer from './user_profile/user_profile_container';
 
 const App = () => (
   <div>
@@ -20,7 +20,7 @@ const App = () => (
     <main className="main">
       <AuthRoute path="/" component={SplashContainer} />
       <ProtectedRoute path="/home" component={ProjectIndexContainer} />
-      <Route path={`/projects/:id`} component={ImageIndexContainer} />
+      <ProtectedRoute path={`/users/:id`} component={UserProfileContainer} />
     </main>
   </div>
 );
