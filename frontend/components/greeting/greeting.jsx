@@ -1,23 +1,37 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-const Greeting = ({ currentUser, logout }) => (
-  <nav className="nav-right">
-    <div>
-        <Link to="/home">
-          <button className="header-button">
-            <p>Explore</p>
-          </button>
-        </Link>
+class Greeting extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-        <Link to="/" onClick={logout}>
-          <button className="header-button">
-            <p>Log Out</p>
-          </button>
-        </Link>
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.logout();
+  }
 
-    </div>
-  </nav>
-);
+  render() {
+    return (
+      <nav className="nav-right">
+        <div>
+            <Link to="/home">
+              <button className="header-button">
+                <p>Explore</p>
+              </button>
+            </Link>
+
+            <Link to="/">
+              <button onClick={this.handleSubmit} className="header-button">
+                <p>Log Out</p>
+              </button>
+            </Link>
+        </div>
+      </nav>
+    );
+  }
+
+}
 
 export default withRouter(Greeting);
