@@ -1,15 +1,15 @@
 import * as APIUtil from '../util/projects_api_util';
 
 export const RECEIVE_PROJECTS = 'RECEIVE_PROJECTS';
-export const RECEIVE_PROJECT_DETAIL = 'RECEIVE_PROJECT_DETAIL';
+export const RECEIVE_PROJECT = 'RECEIVE_PROJECT';
 
 export const receiveProjects = projects => ({
   type: RECEIVE_PROJECTS,
   projects
 });
 
-export const receiveProjectDetail = project => ({
-  type: RECEIVE_PROJECT_DETAIL,
+export const receiveProject = project => ({
+  type: RECEIVE_PROJECT,
   project
 });
 
@@ -18,7 +18,7 @@ export const fetchProjects = () => dispatch => (
     .then(projects => dispatch(receiveProjects(projects)))
 );
 
-export const fetchProjectDetail = id => dispatch => (
-  APIUtil.fetchProjectDetail(id)
-    .then(project => dispatch(receiveProjectDetail(project)))
+export const fetchProject = id => dispatch => (
+  APIUtil.fetchProject(id)
+    .then(project => dispatch(receiveProject(project)))
 );

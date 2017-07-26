@@ -1,6 +1,7 @@
 import React from 'react';
 import UserDetail from './user_detail';
 import UserMainContainer from './user_main_container';
+import LikesContainer from './likes_container';
 
 class UserProfile extends React.Component {
   componentDidMount() {
@@ -15,6 +16,7 @@ class UserProfile extends React.Component {
       <div className="user-profile">
         <UserDetail user={user} />
         <UserMainContainer />
+        <LikesContainer />
       </div>
     );
   }
