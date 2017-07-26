@@ -56,27 +56,20 @@
 .foot-right,
 .foot-left {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 10px;
 }
 
-// .foot-left {
-//   width: 500px
-// }
-
-.foot-left h1,
 .foot-left p {
-  margin: 10px;
+  margin-top: 15px;
   padding: 0px;
 }
 
-.foot-left h1 {
-  text-transform: uppercase;
-}
 
 .foot-left p {
   font-size: 14px;
   letter-spacing: 1px;
+  font-weight: normal;
 }
 
 .foot-right a {
@@ -90,6 +83,5 @@
 }
 
 .foot-right a:hover {
-  text-decoration: underline;
-  color: $dark-white;
+  opacity: 0.5;
 }

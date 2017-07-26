@@ -1,10 +1,14 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.main {
+  background-color: $background;
+}
 
 .user-profile {
   display: flex;
-  margin: 40px;
+  justify-content: space-around;
+  padding: 40px;
 }
 
 .user-info {
@@ -13,16 +17,14 @@
   display: flex;
   flex-direction: column;
   // padding: 10px;
-  background-color: $background;
 }
 
 .user-main {
   display: flex;
   flex-direction: column;
   flex: 4;
-  // background-color: #FFFF99;
-  // padding: 10px;
-  margin: 0px, 20px;
+  background-color: white;
+  margin-left: 40px;
 }
 
 .image-grid {
