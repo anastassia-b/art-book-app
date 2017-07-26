@@ -41,7 +41,7 @@ class ProjectDetail extends React.Component {
           </section>
           <section className="thumbnail-info">
             <span className="project-title">{project.title}</span>
-            <span className="artist-name">artist {project.user_id}</span>
+            <Link to={`/users/${project.user_id}`} className="artist-name">{project.user}</Link>
           </section>
       </div>
 
@@ -66,5 +66,3 @@ class ProjectDetail extends React.Component {
 }
 
 export default ProjectDetail;
-
-// <Link to={`/users/${project.user_id}`} className="artist-name">artist {project.user_id}</Link>
