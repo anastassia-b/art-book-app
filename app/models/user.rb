@@ -3,7 +3,11 @@ class User < ApplicationRecord
   validates :username, uniqueness: true
   validates :password, length: {minimum: 8}, allow_nil: :true
 
-  has_many :projects
+  has_many :projects, dependent: :destroy
+
+  has_many :likes, dependent: :destroy
+  has_many :liked_projects, through: :likes, source: :project
+
   has_many :images, through: :projects, source: :images
 
   attr_reader :password
