@@ -1,5 +1,7 @@
 class Api::LikesController < ApplicationController
-  #before_action :require_logged_in!
+  def index
+    @likes = Like.all
+  end
 
   def create
     @like = Like.new(like_params)
@@ -11,12 +13,22 @@ class Api::LikesController < ApplicationController
   end
 
   def destroy
-    # @like = Like.find_by_id(params[:id])
-    @like = Like.find_by(user_id: like_params[:user_id],
-                        project_id: like_params[:project_id])
+    @like = Like.find_by_id(params[:id])
+    # @like = Like.find_by(user_id: like_params[:user_id],
+    #                     project_id: like_params[:project_id])
     @like.destroy
     render :show
   end
+
+  # def destroy
+  #   @like = Like.find(params[:id])
+  #   @project = Project.find(@like.project_id)
+  #   if @like.destroy!
+  #     render "api/projects/show"
+  #   else
+  #     render json: ["Un-like failed"], status: 404
+  #   end
+  # end
 
   private
 
