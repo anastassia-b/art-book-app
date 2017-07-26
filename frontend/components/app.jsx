@@ -23,7 +23,7 @@ const App = () => (
       <Route exact path="/" component={SplashContainer} />
       <Route exact path="/home" component={SplashContainer} />
       <ProtectedRoute path="/home" component={ProjectIndexContainer} />
-      <ProtectedRoute path={`/users/:id`} component={UserProfileContainer} />
+      <ProtectedRoute path="/users/:id" component={UserProfileContainer} />
     </main>
 
     <Route path="/" render={Footer}/>

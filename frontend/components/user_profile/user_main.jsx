@@ -2,7 +2,7 @@ import React from 'react';
 
 class UserMain extends React.Component {
   componentDidMount() {
-    const user_id = this.props.user.id;
+    const user_id = this.props.match.params.id;
     this.props.fetchImages({user_id});
   }
 
