@@ -15,9 +15,17 @@ class ProjectInfo extends React.Component {
 
   likeStatus() {
     if (this.props.project.likes.includes(this.props.currentUser.id)) {
-      return "Unlike";
+      return "Liked ❤";
     } else {
       return "Like";
+    }
+  }
+
+  buttonType() {
+    if (this.props.project.likes.includes(this.props.currentUser.id)) {
+      return "liked-button";
+    } else {
+      return "session-button";
     }
   }
 
@@ -48,7 +56,7 @@ class ProjectInfo extends React.Component {
         <p>Lorem ipsum dolor sit amet, noster verear pro cu, mea eu vitae latine contentiones. Duo in modo magna aeterno, eu dico definiebas ius, ei postea sensibus consequat sea. Ne commodo electram iudicabit duo, vim et illum dissentiet.
         </p>
         <section className="likes-group">
-          <button className="session-button" onClick={this.toggleLike}>{this.likeStatus()}</button>
+          <button className={this.buttonType()} onClick={this.toggleLike}>{this.likeStatus()}</button>
         </section>
       </div>
     </aside>
