@@ -27,6 +27,12 @@ class Greeting extends React.Component {
                 <p>Log Out</p>
               </button>
             </Link>
+
+            <Link to={`/users/${this.props.currentUser.id}`}>
+              <button className="header-button">
+                <p>My Profile</p>
+              </button>
+            </Link>
         </div>
       </nav>
     );
