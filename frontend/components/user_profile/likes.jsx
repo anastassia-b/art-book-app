@@ -16,7 +16,7 @@ class Likes extends React.Component {
       <h4 className="user-header">Liked Projects</h4>
       <ul className="image-grid">
         {projects.map((project, idx) => (
-          <li className="image" key={project.id}>
+          <li className="image-small" key={project.id}>
             <img src={project.thumbnail_url}/>
           </li>
         ))}

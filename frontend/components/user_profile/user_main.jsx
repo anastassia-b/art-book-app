@@ -16,7 +16,7 @@ class UserMain extends React.Component {
         <h4 className="user-header">Selected Work</h4>
         <ul className="image-grid">
           {images.map((image, idx) => (
-            <li className="image" key={image.id}>
+            <li className="image-small" key={image.id}>
               <img src={image.img_url}/>
             </li>
           ))}

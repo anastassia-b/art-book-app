@@ -14,7 +14,7 @@ const style = {
     // top             : '50px',
     // bottom          : '100px',
     margin          : 'auto',
-    width           : 800,
+    width           : '72vw',
     height          : '90vh',
     // border          : '1px solid #ccc',
     border          : '1px solid #000',
