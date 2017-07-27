@@ -4,6 +4,8 @@ class Likes extends React.Component {
 
   componentDidMount() {
     this.props.clearProjects();
+    // const id = this.props.match.params.id;
+    // this.props.fetchUser(id);
     const likes = this.props.user.likes;
     likes.forEach(like => this.props.fetchProject(like));
   }
