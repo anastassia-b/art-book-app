@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy, :show]
     resources :projects, only: [:index, :show, :create]
     resources :images, only: [:index, :show]
-    resources :likes, only: [:create, :destroy]
+    resources :likes, only: [:create]
   end
+
+  delete '/api/likes', :to => 'api/likes#destroy'
 end
