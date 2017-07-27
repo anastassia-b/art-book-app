@@ -1,5 +1,5 @@
 import React from 'react';
-// import ProjectDetail from '../projects/project_detail';
+import ProjectDetail from '../projects/project_detail';
 
 class Likes extends React.Component {
 
@@ -13,7 +13,7 @@ class Likes extends React.Component {
 
   render() {
     const projects = this.props.projects;
-    console.log(projects);
+
     return (
     <main className="likes-main">
       <h4 className="user-header">Liked Projects</h4>
@@ -34,3 +34,7 @@ export default Likes;
   // {projects.map((project, idx) => (
   //   <ProjectDetail project={project} key={project.id}/>
   // ))}
+
+  // <li className="image-small" key={project.id}>
+  //   <img src={project.thumbnail_url}/>
+  // </li>
