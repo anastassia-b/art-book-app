@@ -1,4 +1,5 @@
 import React from 'react';
+import LikesContainer from './likes_container';
 
 class UserMain extends React.Component {
   componentDidMount() {
@@ -10,8 +11,9 @@ class UserMain extends React.Component {
     const images = this.props.images;
 
     return (
-      <main className="user-main">
-        <h4 className="image-header">Images</h4>
+      <div className="user-main">
+      <main className="image-main">
+        <h4 className="user-header">Selected Work</h4>
         <ul className="image-grid">
           {images.map((image, idx) => (
             <li className="image" key={image.id}>
@@ -20,6 +22,8 @@ class UserMain extends React.Component {
           ))}
         </ul>
       </main>
+      <LikesContainer />
+      </div>
     );
   }
 }

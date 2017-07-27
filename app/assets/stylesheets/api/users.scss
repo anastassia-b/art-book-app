@@ -27,18 +27,22 @@
   margin-left: 40px;
 }
 
+.image-main, .likes-main {
+
+}
+
 .image-grid {
   margin: 10px;
   display: flex;
   // flex-wrap: row;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .image {
   margin: 10px;
 }
 
-.image-header, .likes-header {
+.user-header {
   margin: 10px;
   padding: 10px;
   font-weight: bold
