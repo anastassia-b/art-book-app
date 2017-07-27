@@ -1,4 +1,5 @@
 import React from 'react';
+// import ProjectDetail from '../projects/project_detail';
 
 class Likes extends React.Component {
 
@@ -29,3 +30,7 @@ class Likes extends React.Component {
 }
 
 export default Likes;
+
+  // {projects.map((project, idx) => (
+  //   <ProjectDetail project={project} key={project.id}/>
+  // ))}
