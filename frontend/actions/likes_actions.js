@@ -19,8 +19,8 @@ export const likeProject = like => dispatch => (
   ))
 );
 
-export const unlikeProject = id => dispatch => (
-  APIUtil.destroyLike(id).then(like => (
+export const unlikeProject = like => dispatch => (
+  APIUtil.destroyLike(like).then(like => (
     dispatch(removeLike(like))
   ))
 );

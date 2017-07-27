@@ -2,9 +2,35 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 class ProjectInfo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.toggleLike = this.toggleLike.bind(this);
+    this.likeStatus = this.likeStatus.bind(this);
+  }
+
   componentDidMount() {
     const id = this.props.project.user_id;
     this.props.fetchUser(id);
+  }
+
+  likeStatus() {
+    if (this.props.project.likes.includes(this.props.currentUser.id)) {
+      return "Unlike";
+    } else {
+      return "Like";
+    }
+  }
+
+  toggleLike() {
+    const like = {project_id: this.props.project.id,
+                  user_id: this.props.currentUser.id
+                  };
+
+    if (this.props.project.likes.includes(this.props.currentUser.id)) {
+      this.props.unlikeProject(like);
+    } else {
+      this.props.likeProject(like);
+    }
   }
 
   render() {
@@ -22,7 +48,7 @@ class ProjectInfo extends React.Component {
         <p>Lorem ipsum dolor sit amet, noster verear pro cu, mea eu vitae latine contentiones. Duo in modo magna aeterno, eu dico definiebas ius, ei postea sensibus consequat sea. Ne commodo electram iudicabit duo, vim et illum dissentiet.
         </p>
         <section className="likes-group">
-          <button className="session-button">Like</button>
+          <button className="session-button" onClick={this.toggleLike}>{this.likeStatus()}</button>
         </section>
       </div>
     </aside>
