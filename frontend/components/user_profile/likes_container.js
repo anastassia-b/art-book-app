@@ -1,13 +1,16 @@
 import { connect } from 'react-redux';
 import Likes from './likes';
-import { fetchProject } from '../../actions/project_actions';
+import { fetchProject, clearProjects } from '../../actions/project_actions';
+import { selectAllProjects } from '../../reducers/selectors';
 
 const mapStateToProps = state => ({
-  user: state.user
+  user: state.user,
+  projects: selectAllProjects(state)
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchProject: id => dispatch(fetchProject(id))
+  fetchProject: id => dispatch(fetchProject(id)),
+  clearProjects: () => dispatch(clearProjects())
 });
 
 export default connect(

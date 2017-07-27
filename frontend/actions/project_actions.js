@@ -2,6 +2,11 @@ import * as APIUtil from '../util/projects_api_util';
 
 export const RECEIVE_PROJECTS = 'RECEIVE_PROJECTS';
 export const RECEIVE_PROJECT = 'RECEIVE_PROJECT';
+export const CLEAR_PROJECTS = 'CLEAR_PROJECTS';
+
+export const clearProjects = () => ({
+  type: CLEAR_PROJECTS
+});
 
 export const receiveProjects = projects => ({
   type: RECEIVE_PROJECTS,
