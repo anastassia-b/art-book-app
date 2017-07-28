@@ -4,27 +4,17 @@ import ProjectDetail from '../projects/project_detail';
 class Likes extends React.Component {
 
   componentDidMount() {
-    // this.state = {
-    //   id: this.props.match.params.id
-    // };
-
-    this.props.clearProjects();
-    // const id = this.props.match.params.id;
-    // this.props.fetchUser(id);
     const likes = this.props.user.likes;
     likes.forEach(like => this.props.fetchProject(like));
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   if (this.props.match.params.id !== nextProps.match.params.id) {
-  //     this.props.clearProjects();
-  //     const id = nextProps.match.params.id;
-  //     this.props.fetchUser(id);
-  //     this.setState({ id: nextProps.match.params.id});
-  //     const likes = nextProps.user.likes;
-  //     likes.forEach(like => nextProps.fetchProject(like));
-  //   }
-  // }
+  componentWillReceiveProps(nextProps) {
+    if (this.props.user.id !== nextProps.user.id) {
+      const id = nextProps.match.params.id;
+      const likes = nextProps.user.likes;
+      likes.forEach(projectId => nextProps.fetchProject(projectId));
+    }
+  }
 
 
   render() {
