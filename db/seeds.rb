@@ -3,11 +3,11 @@ Project.destroy_all
 Image.destroy_all
 
 guest = User.create(username: "guest", email: "guest@example.com", password: "password",
-avatar_url: "https://lh4.ggpht.com/cfo9ApPG_DfKZ139O84XUGem1aXZL3cIGw9jB4cGpUprGNeEMav5TLBfq8sEZc8mHeY=w300")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501277347/cfo9ApPG_DfKZ139O84XUGem1aXZL3cIGw9jB4cGpUprGNeEMav5TLBfq8sEZc8mHeY_w300_dehg2m.png")
 anastassia = User.create(username: "anastassia", email: "anastassia@example.com", password: "password",
-avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501277347/cfo9ApPG_DfKZ139O84XUGem1aXZL3cIGw9jB4cGpUprGNeEMav5TLBfq8sEZc8mHeY_w300_dehg2m.png")
 david = User.create(username: "david", email: "david@example.com", password: "password",
-avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501277347/cfo9ApPG_DfKZ139O84XUGem1aXZL3cIGw9jB4cGpUprGNeEMav5TLBfq8sEZc8mHeY_w300_dehg2m.png")
 basquiat = User.create(username: "Jean Michel Basquiat", email: "basquiat@example.com", password: "password",
 avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500935387/408555E200000578-0-image-a-121_1495165491692_tefjt7.jpg")
 mondrian = User.create(username: "Piet Mondrian", email: "mondrian@example.com", password: "password",
@@ -15,29 +15,29 @@ avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300
 robert = User.create(username: "Robert Rauschenberg", email: "robert@example.com", password: "password",
 avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500935589/_92727374_rauschenberg_bbc_mfk7io.jpg")
 karl = User.create(username: "Karl Gerstner", email: "karl@example.com", password: "password",
-avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501277412/contact-pink-square_ao7iog.png")
 maiko = User.create(username: "Maiko Gubler", email: "maiko@example.com", password: "password",
 avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500935689/Maiko-Gubler-Artists-Chamber-Gallery_jkgaqx.jpg")
 onchi = User.create(username: "Koshiro Onchi", email: "onchi@example.com", password: "password",
-avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501277556/Resene_Sticky_Fingers_ek6zca.jpg")
 kelly = User.create(username: "Ellsworth Kelly", email: "kelly@example.com", password: "password",
 avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500935787/Schjeldahl-Ellsworth-Kelly_fkahbk.jpg")
 wayne = User.create(username: "Wayne Thiebaud", email: "wayne@example.com", password: "password",
-avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501277412/contact-pink-square_ao7iog.png")
 rothko = User.create(username: "Mark Rothko", email: "rothko@example.com", password: "password",
-avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,w_500/v1501277491/pink-square-hi_dcseku.png")
 egon = User.create(username: "Egon Schiele", email: "egon@example.com", password: "password",
 avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500935863/395b5a6ee5243c173cb86788f43fb35a_nhxa11.jpg")
 whistler = User.create(username: "James Abbott McNeill Whistler", email: "whistler@example.com", password: "password",
-avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,w_500/v1501277491/pink-square-hi_dcseku.png")
 michele = User.create(username: "Michele Laurait", email: "michele@example.com", password: "password",
-avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501277556/Resene_Sticky_Fingers_ek6zca.jpg")
 munch = User.create(username: "Edvard Munch", email: "munch@example.com", password: "password",
 avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500935965/1200px-The_Scream_e7cgkp.jpg")
 cy = User.create(username: "Cy Twombly", email: "cy@example.com", password: "password",
 avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/c_fill,h_300,w_300/v1500936030/Cy_Twombly_z1qjrz.jpg")
 # pollock = User.create(username: "Jackson Pollock", email: "pollock@example.com", password: "password",
-# avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501014921/square-ios-app-xxl_fgu61z.png")
+# avatar_url: "http://res.cloudinary.com/dvcd3fe9t/image/upload/v1501277347/cfo9ApPG_DfKZ139O84XUGem1aXZL3cIGw9jB4cGpUprGNeEMav5TLBfq8sEZc8mHeY_w300_dehg2m.png")
 
 
 project0 = Project.create(user_id: maiko.id, title: "architecture", description: "About Making Architecture",
@@ -257,37 +257,37 @@ Comment.create(user_id: mondrian.id, project_id: project13.id, body: "nice work!
 Comment.create(user_id: robert.id, project_id: project0.id, body: "nice work!")
 Comment.create(user_id: robert.id, project_id: project1.id, body: "nice work!")
 Comment.create(user_id: robert.id, project_id: project16.id, body: "nice work!")
-Comment.create(user_id: karl.id, project_id: project0.id, body: "nice work!")
-Comment.create(user_id: karl.id, project_id: project13.id, body: "nice work!")
-Comment.create(user_id: karl.id, project_id: project1.id, body: "nice work!")
-Comment.create(user_id: maiko.id, project_id: project8.id, body: "nice work!")
-Comment.create(user_id: maiko.id, project_id: project12.id, body: "nice work!")
-Comment.create(user_id: maiko.id, project_id: project1.id, body: "nice work!")
-Comment.create(user_id: onchi.id, project_id: project11.id, body: "nice work!")
-Comment.create(user_id: onchi.id, project_id: project12.id, body: "nice work!")
-Comment.create(user_id: onchi.id, project_id: project4.id, body: "nice work!")
-Comment.create(user_id: kelly.id, project_id: project0.id, body: "nice work!")
-Comment.create(user_id: kelly.id, project_id: project12.id, body: "nice work!")
-Comment.create(user_id: kelly.id, project_id: project16.id, body: "nice work!")
-Comment.create(user_id: wayne.id, project_id: project11.id, body: "nice work!")
-Comment.create(user_id: wayne.id, project_id: project10.id, body: "nice work!")
-Comment.create(user_id: wayne.id, project_id: project0.id, body: "nice work!")
-Comment.create(user_id: rothko.id, project_id: project11.id, body: "nice work!")
-Comment.create(user_id: rothko.id, project_id: project4.id, body: "nice work!")
-Comment.create(user_id: rothko.id, project_id: project16.id, body: "nice work!")
-Comment.create(user_id: egon.id, project_id: project5.id, body: "nice work!")
-Comment.create(user_id: egon.id, project_id: project11.id, body: "nice work!")
-Comment.create(user_id: egon.id, project_id: project12.id, body: "nice work!")
-Comment.create(user_id: egon.id, project_id: project4.id, body: "nice work!")
-Comment.create(user_id: whistler.id, project_id: project11.id, body: "nice work!")
-Comment.create(user_id: whistler.id, project_id: project3.id, body: "nice work!")
-Comment.create(user_id: whistler.id, project_id: project5.id, body: "nice work!")
-Comment.create(user_id: michele.id, project_id: project8.id, body: "nice work!")
-Comment.create(user_id: michele.id, project_id: project13.id, body: "nice work!")
-Comment.create(user_id: michele.id, project_id: project2.id, body: "nice work!")
-Comment.create(user_id: munch.id, project_id: project12.id, body: "nice work!")
-Comment.create(user_id: munch.id, project_id: project13.id, body: "nice work!")
-Comment.create(user_id: munch.id, project_id: project5.id, body: "nice work!")
-Comment.create(user_id: cy.id, project_id: project7.id, body: "nice work!")
-Comment.create(user_id: cy.id, project_id: project8.id, body: "nice work!")
-Comment.create(user_id: cy.id, project_id: project10.id, body: "nice work!")
+Comment.create(user_id: karl.id, project_id: project0.id, body: "really cool")
+Comment.create(user_id: karl.id, project_id: project13.id, body: "really cool")
+Comment.create(user_id: karl.id, project_id: project1.id, body: "really cool")
+Comment.create(user_id: maiko.id, project_id: project8.id, body: "really cool")
+Comment.create(user_id: maiko.id, project_id: project12.id, body: "really cool")
+Comment.create(user_id: maiko.id, project_id: project1.id, body: "really cool")
+Comment.create(user_id: onchi.id, project_id: project11.id, body: "really cool")
+Comment.create(user_id: onchi.id, project_id: project12.id, body: "I really like the colors.")
+Comment.create(user_id: onchi.id, project_id: project4.id, body: "I really like the colors.")
+Comment.create(user_id: kelly.id, project_id: project0.id, body: "I really like the colors.")
+Comment.create(user_id: kelly.id, project_id: project12.id, body: "I really like the colors.")
+Comment.create(user_id: kelly.id, project_id: project16.id, body: "I really like the colors.")
+Comment.create(user_id: wayne.id, project_id: project11.id, body: "I really like the colors.")
+Comment.create(user_id: wayne.id, project_id: project10.id, body: "I really like the colors.")
+Comment.create(user_id: wayne.id, project_id: project0.id, body: "interesting")
+Comment.create(user_id: rothko.id, project_id: project11.id, body: "interesting")
+Comment.create(user_id: rothko.id, project_id: project4.id, body: "interesting")
+Comment.create(user_id: rothko.id, project_id: project16.id, body: "interesting")
+Comment.create(user_id: egon.id, project_id: project5.id, body: "interesting")
+Comment.create(user_id: egon.id, project_id: project11.id, body: "Great technique!!!")
+Comment.create(user_id: egon.id, project_id: project12.id, body: "unusual")
+Comment.create(user_id: egon.id, project_id: project4.id, body: "unusual")
+Comment.create(user_id: whistler.id, project_id: project11.id, body: "unusual")
+Comment.create(user_id: whistler.id, project_id: project3.id, body: "unusual")
+Comment.create(user_id: whistler.id, project_id: project5.id, body: "unusual")
+Comment.create(user_id: michele.id, project_id: project8.id, body: "unusual")
+Comment.create(user_id: michele.id, project_id: project13.id, body: "unusual")
+Comment.create(user_id: michele.id, project_id: project2.id, body: "unusual")
+Comment.create(user_id: munch.id, project_id: project12.id, body: "I like it! Check out my work")
+Comment.create(user_id: munch.id, project_id: project13.id, body: "I like it! Check out my work")
+Comment.create(user_id: munch.id, project_id: project5.id, body: "I like it! Check out my work")
+Comment.create(user_id: cy.id, project_id: project7.id, body: "I like it! Check out my work")
+Comment.create(user_id: cy.id, project_id: project8.id, body: "I like it! Check out my work")
+Comment.create(user_id: cy.id, project_id: project10.id, body: "I like it! Check out my work")
