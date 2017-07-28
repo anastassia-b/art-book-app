@@ -116,17 +116,40 @@ p {
 
 .image-caption {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .comments-list {
+ display: flex;
+ flex-direction: column;
+ padding: 30px;
+}
 
+.comment-container {
+  margin-bottom: 15px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
 }
 
 .comment {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
 
+.comment-user {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .comment-body {
-
+  font-size: 14px;
 }

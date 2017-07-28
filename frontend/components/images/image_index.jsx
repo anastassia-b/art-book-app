@@ -26,9 +26,14 @@ class ImageIndex extends React.Component {
           ))}
         </ul>
         <ul className="comments-list">
+          <h3>Comments</h3>
           {comments.map((comment, idx) => (
-            <li className="comment" key={comment.id}>
-              <span className="comment-body">{comment.body}</span>
+            <li className="comment-container" key={comment.id}>
+              <img className="comment-avatar" src={comment.user_avatar_url}/>
+              <div className="comment">
+                <span className="comment-user">{comment.username}</span>
+                <span className="comment-body">{comment.body}</span>
+              </div>
             </li>
           ))}
         </ul>

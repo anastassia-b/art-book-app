@@ -3,9 +3,21 @@ import LikesContainer from './likes_container';
 
 class UserMain extends React.Component {
   componentDidMount() {
+    this.state = {
+      id: this.props.match.params.id
+    };
+
     const user_id = this.props.match.params.id;
     this.props.fetchImages({user_id});
   }
+
+  // componentWillReceiveProps(nextProps) {
+  //   if (this.props.match.params.id !== nextProps.match.params.id) {
+  //     const user_id = nextProps.match.params.id;
+  //     this.props.fetchImages({user_id});
+  //     this.setState({ id: nextProps.match.params.id});
+  //   }
+  // }
 
   render() {
     const images = this.props.images;
