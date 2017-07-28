@@ -15,7 +15,6 @@
     "react-scroll": "^1.5.4",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "redux-logger": "^3.0.6",
     "webpack": "^3.3.0"
   },
   "engines": {
@@ -33,7 +32,9 @@
     "doc": "docs",
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "redux-logger": "^3.0.6"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anastassia-b/baehance.git"
