@@ -10,7 +10,7 @@ const imagesReducer = (state = {}, action) => {
     case CLEAR_IMAGES:
       return {};
     default:
-      return newState;
+      return state;
   }
 };
 

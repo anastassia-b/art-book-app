@@ -1,6 +1,10 @@
 class Api::CommentsController < ApplicationController
   def index
-    @comments = Comment.all
+    if params[:project_id]
+      @comments = Project.find(params[:project_id]).comments
+    else
+      @comments = Comment.all
+    end
   end
 
   def create

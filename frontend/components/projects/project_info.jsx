@@ -46,7 +46,7 @@ class ProjectInfo extends React.Component {
     const user = this.props.user;
 
     return (
-    <aside className="project-info">
+    <aside className="project-right">
       <Link to={`/users/${user.id}`}>
         <img className="avatar" src={user.avatar_url}/>
       </Link>

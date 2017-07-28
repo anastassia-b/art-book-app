@@ -6,13 +6,20 @@
   display: flex;
 }
 
-.project-info {
+.project-right {
   flex: 1;
   background-color: $background;
   display: flex;
   flex-direction: column;
   padding: 5px;
   margin: 0px 10px;
+}
+
+.project-left {
+  flex: 3;
+  flex-direction: column;
+  overflow: auto;
+  height: 88vh;
 }
 
 .avatar {
@@ -98,12 +105,9 @@ p {
 }
 
 .images-list {
-  flex: 3;
   display: flex;
   flex-direction: column;
   width: 680px;
-  overflow: auto;
-  height: 88vh;
 }
 
 .image {
@@ -113,4 +117,16 @@ p {
 .image-caption {
   display: flex;
   justify-content: center;
+}
+
+.comments-list {
+
+}
+
+.comment {
+
+}
+
+.comment-body {
+
 }
