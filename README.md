@@ -13,10 +13,15 @@ Baehance is a portfolio showcase web application inspired by Behance. It is a fu
 * BCrypt for password-salting and hashing for a secure authentication system.
 * Guest / Demo Account
 
+![Session](http://g.recordit.co/wJrH8FnVyJ.gif)
+
 ### Modals
+
+Modals were used to implement the Login/Signup session forms, as well as project views.
 
 ### Comments and Likes
 
+![Comments and Likes](http://g.recordit.co/aHuEZPU54l.gif)
 
 ## Technologies
 
