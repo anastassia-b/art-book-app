@@ -6,4 +6,5 @@ class Project < ApplicationRecord
 
   has_many :likes
   has_many :likers, through: :likes, source: :user
+  has_many :comments, dependent: :destroy
 end

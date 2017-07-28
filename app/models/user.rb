@@ -9,7 +9,8 @@ class User < ApplicationRecord
   has_many :liked_projects, through: :likes, source: :project
 
   has_many :images, through: :projects, source: :images
-
+  has_many :comments
+  
   attr_reader :password
 
   after_initialize :ensure_session_token
