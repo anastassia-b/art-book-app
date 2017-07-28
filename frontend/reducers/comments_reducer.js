@@ -1,4 +1,4 @@
-import { RECEIVE_COMMENTS, RECEIVE_COMMENT, REMOVE_COMMENT } from '../actions/comment_actions';
+import { RECEIVE_COMMENTS, RECEIVE_COMMENT, REMOVE_COMMENT, CLEAR_COMMENTS } from '../actions/comment_actions';
 import { merge } from 'lodash';
 
 const commentsReducer = (state = {}, action) => {
@@ -12,6 +12,8 @@ const commentsReducer = (state = {}, action) => {
       return merge({}, state, newComment);
     // case REMOVE_COMMENT:
     //   return
+    case CLEAR_COMMENTS:
+      return {};
     default:
       return state;
   }

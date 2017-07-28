@@ -1,14 +1,15 @@
 import { connect } from 'react-redux';
 import CommentsList from './comments_list';
 import { selectComments } from '../../reducers/selectors';
-import { fetchComments } from '../../actions/comment_actions';
+import { fetchComments, clearComments } from '../../actions/comment_actions';
 
 const mapStateToProps = (state) => ({
   comments: selectComments(state)
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchComments: id => dispatch(fetchComments(id))
+  fetchComments: id => dispatch(fetchComments(id)),
+  clearComments: () => dispatch(clearComments())
 });
 
 export default connect(

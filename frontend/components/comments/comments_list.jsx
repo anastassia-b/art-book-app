@@ -8,6 +8,10 @@ class CommentsList extends React.Component {
     this.props.fetchComments({project_id});
   }
 
+  componentWillUnmount() {
+    this.props.clearComments();
+  }
+
   render() {
     const comments = this.props.comments;
 

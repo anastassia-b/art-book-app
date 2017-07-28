@@ -10,7 +10,6 @@ class ImageIndex extends React.Component {
 
   componentWillUnmount() {
     this.props.clearImages();
-    //TODO: clearComments();
   }
 
   render() {
