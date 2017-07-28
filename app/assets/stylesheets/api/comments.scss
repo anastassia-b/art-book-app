@@ -30,6 +30,14 @@
   border-radius: 5px;
 }
 
+.comment-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40vw;
+  align-items: center;
+}
+
 .comment {
   margin-left: 10px;
   display: flex;
@@ -44,4 +52,22 @@
 
 .comment-body {
   font-size: 14px;
+}
+
+.delete-button {
+  // padding: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  font-family: sans-serif;
+  // font-size: 11px;
+  width: 20px;
+
+  background-color: $gray;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+
+.delete-icon:hover {
+  color: $light-black;
 }

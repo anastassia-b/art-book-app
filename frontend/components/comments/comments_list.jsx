@@ -12,6 +12,21 @@ class CommentsList extends React.Component {
     this.props.clearComments();
   }
 
+  deleteCommentButton(comment) {
+    if (this.props.currentUserId === comment.user_id) {
+      return (
+        <button onClick={() => this.deleteComment(comment.id)} className="delete-icon">
+          <i className="fa fa-trash-o" aria-hidden="true"></i>
+        </button>
+      );
+    }
+  }
+
+  deleteComment(commentId) {
+    event.preventDefault();
+    this.props.deleteComment(commentId);
+  }
+
   render() {
     const comments = this.props.comments;
 
@@ -21,9 +36,12 @@ class CommentsList extends React.Component {
           {comments.map((comment, idx) => (
             <li className="comment-container" key={comment.id}>
               <img className="comment-avatar" src={comment.user_avatar_url}/>
-              <div className="comment">
-                <Link to={`users/${comment.user_id}`} className="comment-user">{comment.username}</Link>
-                <span className="comment-body">{comment.body}</span>
+              <div className="comment-right">
+                <div className="comment">
+                  <Link to={`users/${comment.user_id}`} className="comment-user">{comment.username}</Link>
+                  <span className="comment-body">{comment.body}</span>
+                </div>
+                {this.deleteCommentButton(comment)}
               </div>
             </li>
           ))}

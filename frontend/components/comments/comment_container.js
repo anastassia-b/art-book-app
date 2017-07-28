@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { createComment, deleteComment } from "../../actions/comment_actions";
+import { createComment } from "../../actions/comment_actions";
 import Comment from './comment';
 
 const mapStateToProps = (state, ownProps) => ({
@@ -8,8 +8,7 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  createComment: comment => dispatch(createComment(comment)),
-  deleteComment: id => dispatch(deleteComment(id))
+  createComment: comment => dispatch(createComment(comment))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Comment);
