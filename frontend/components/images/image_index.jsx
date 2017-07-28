@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class ImageIndex extends React.Component {
   componentDidMount() {
@@ -31,7 +32,7 @@ class ImageIndex extends React.Component {
             <li className="comment-container" key={comment.id}>
               <img className="comment-avatar" src={comment.user_avatar_url}/>
               <div className="comment">
-                <span className="comment-user">{comment.username}</span>
+                <Link to={`users/${comment.user_id}`} className="comment-user">{comment.username}</Link>
                 <span className="comment-body">{comment.body}</span>
               </div>
             </li>
