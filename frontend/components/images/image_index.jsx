@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CommentContainer from '../comments/comment_container';
 
 class ImageIndex extends React.Component {
   componentDidMount() {
@@ -37,6 +38,7 @@ class ImageIndex extends React.Component {
               </div>
             </li>
           ))}
+          <CommentContainer projectId={this.props.project.id} />
         </ul>
       </div>
     );
