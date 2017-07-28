@@ -32,7 +32,6 @@ class ProjectDetail extends React.Component {
 
   render() {
     const project = this.props.project;
-
     return (
       <div>
         <div className="project" key={project.id}>
@@ -41,9 +40,11 @@ class ProjectDetail extends React.Component {
           </section>
           <section className="thumbnail-info">
             <span className="project-title">{project.title}</span>
-            <Link to={`/users/${project.user_id}`} className="artist-name">{project.user}</Link>
+            <Link to={`/users/${project.user_id}`}
+                  className="artist-name">{project.user}
+            </Link>
           </section>
-      </div>
+        </div>
 
         <Modal
           contentLabel="Modal"
@@ -52,7 +53,8 @@ class ProjectDetail extends React.Component {
           style={style}>
 
           <div className="x-button">
-            <button onClick={this.closeModal}><i aria-hidden="true"></i></button>
+            <button onClick={this.closeModal}><i aria-hidden="true"></i>
+            </button>
           </div>
           <div className="project-detail">
             <ImageIndexContainer project={project}/>

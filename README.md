@@ -13,11 +13,48 @@ Baehance is a portfolio showcase web application inspired by Behance. It is a fu
 * BCrypt for password-salting and hashing for a secure authentication system.
 * Guest / Demo Account
 
-![Session](http://g.recordit.co/wJrH8FnVyJ.gif)
+![Session](http://g.recordit.co/DTgAZHML7h.gif)
 
 ### Modals
 
 Modals were used to implement the Login/Signup session forms, as well as project views.
+
+```javascript
+render() {
+  const project = this.props.project;
+  return (
+    <div>
+      <div className="project" key={project.id}>
+        <section onClick={this.openModal.bind(this)}>
+          <img className="thumbnail" src={project.thumbnail_url}/>
+        </section>
+        <section className="thumbnail-info">
+          <span className="project-title">{project.title}</span>
+          <Link to={`/users/${project.user_id}`}
+                className="artist-name">{project.user}
+          </Link>
+        </section>
+      </div>
+
+      <Modal
+        contentLabel="Modal"
+        isOpen={this.state.modalOpen}
+        onRequestClose={this.closeModal}
+        style={style}>
+
+        <div className="x-button">
+          <button onClick={this.closeModal}><i aria-hidden="true"></i>
+          </button>
+        </div>
+        <div className="project-detail">
+          <ImageIndexContainer project={project}/>
+          <ProjectInfoContainer project={project}/>
+        </div>
+      </Modal>
+    </div>
+  );
+}
+```
 
 ### Comments and Likes
 
