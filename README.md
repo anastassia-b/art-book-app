@@ -1,14 +1,8 @@
 # ArtBook
 
-NEW VERSION: [https://artbookapp.herokuapp.com/#/]
+https://artbookapp.herokuapp.com/
 
-Previously: [https://baehance.herokuapp.com/]
-
-ArtBook is a portfolio showcase web application inspired by [Behance](https://www.behance.net/). It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.
-
-<!-- [Live Demo!][heroku] -->
-[heroku]: https://baehance.herokuapp.com/
-
+ArtBook is a portfolio showcase web application. It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.
 
 ## Features & Implementation
 

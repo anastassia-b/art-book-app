@@ -116,7 +116,7 @@ class SessionForm extends React.Component {
   }
 
   formHeader() {
-    return (this.state.logIn) ? <h3>Log in to Baehance</h3> : <h3>Join Baehance</h3>;
+    return (this.state.logIn) ? <h3>Log in to ArtBook</h3> : <h3>Join ArtBook</h3>;
   }
 
   formButton() {
