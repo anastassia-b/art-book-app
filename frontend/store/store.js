@@ -5,7 +5,7 @@ import RootReducer from '../reducers/root_reducer';
 const middlewares = [thunk];
 
 if (process.env.NODE_ENV !== 'production') {
-  import logger from 'redux-logger';
+  const { logger } = require('redux-logger');
   middlewares.push(logger);
 }
 
