@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => (
   <footer className="footer">
     <section className="foot-left">
-      <p>Baehance is a platform for exploring art portfolios. Inspired by Behance, made by Anastassia.</p>
+      <p>ArtBook is a platform for exploring art portfolios.</p>
     </section>
     <section className="foot-right">
       <a href="https://github.com/anastassia-b">
