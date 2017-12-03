@@ -19,6 +19,7 @@ class SessionForm extends React.Component {
     this.openModal = this.openModal.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.guestLogin = this.guestLogin.bind(this);
+    this.guestSignup = this.guestSignup.bind(this);
     this.switchForms = this.switchForms.bind(this);
   }
 
@@ -38,10 +39,54 @@ class SessionForm extends React.Component {
     }
   }
 
+  guestSignup(e) {
+    e.preventDefault();
+
+    let name = "guest";
+    let email = "guest@gmail.com"
+    let pw = "password";
+
+    for ( let i = 0; i < name.length; i++ ) {
+        setTimeout(() => this.setState({
+            username: name.slice(0, i + 1)
+        }), i * 50);
+    }
+
+    if (!this.state.logIn) {
+      for ( let j = 0; j < email.length; j++ ) {
+          setTimeout(() => this.setState({
+              email: email.slice(0, j + 1)
+          }), (j + 9) * 50);
+      }
+    }
+
+    for ( let k = 0; k < pw.length; k++ ) {
+      setTimeout(() => this.setState({
+        password: pw.slice(0, k + 1)
+      }), (k + 25) * 50);
+    }
+
+    setTimeout(() => this.props.login(this.state), 2000)
+  }
+
   guestLogin(e) {
     e.preventDefault();
-    const user = {username: 'guest', password: 'password'};
-    this.props.login(user);
+    let name = "guest";
+    let pw = "password";
+
+    for ( let i = 0; i < name.length; i++ ) {
+        setTimeout(() => this.setState({
+            username: name.slice(0, i + 1)
+        }), i * 50);
+    }
+
+    for ( let k = 0; k < pw.length; k++ ) {
+      setTimeout(() => this.setState({
+        password: pw.slice(0, k + 1)
+      }), (k + 10) * 50);
+    }
+
+    setTimeout(() => this.props.login(this.state), 1300)
   }
 
   renderErrors() {
@@ -146,7 +191,7 @@ class SessionForm extends React.Component {
 
               <div className="session-button-container">
                 <button className="session-button" onClick={this.handleSubmit}>{this.formButton()}</button>
-                <button className="session-button" onClick={this.guestLogin}>Guest</button>
+                <button className="session-button" onClick={this.state.logIn ? this.guestLogin : this.guestSignup}>Guest</button>
               </div>
 
               <a
