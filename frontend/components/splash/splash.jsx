@@ -14,8 +14,8 @@ class Splash extends React.Component {
   }
 
   demoButton() {
-    const name = this.props.currentUser.username;
     if (this.props.currentUser) {
+      const name = this.props.currentUser.username;
       return (<h4>Welcome, {name}.</h4>)
     } else {
     return (
