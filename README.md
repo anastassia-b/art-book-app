@@ -1,6 +1,7 @@
 # ArtBook
 
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![tested with rspec](https://img.shields.io/badge/tested%20with-rspec-brightgreen.svg)](https://github.com/rspec/rspec-rails)
 
 https://artbookapp.herokuapp.com/
 
@@ -8,7 +9,7 @@ ArtBook is a portfolio showcase web application. It is a full-stack app built us
 
 ## Planning & Design
 
-[Design documents can be found in the wiki!](https://github.com/anastassia-b/art-book-app/wiki) 
+[Design documents can be found in the wiki!](https://github.com/anastassia-b/art-book-app/wiki)
 
 ## Features & Implementation
 
