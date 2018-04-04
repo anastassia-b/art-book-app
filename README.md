@@ -6,6 +6,10 @@ https://artbookapp.herokuapp.com/
 
 ArtBook is a portfolio showcase web application. It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.
 
+## Planning & Design
+
+[Design documents can be found in the wiki!](https://github.com/anastassia-b/art-book-app/wiki) 
+
 ## Features & Implementation
 
 ### Secure Authentication
