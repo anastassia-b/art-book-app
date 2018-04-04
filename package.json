@@ -1,5 +1,5 @@
 {
-  "name": "baehance",
+  "name": "art-book-app",
   "private": true,
   "dependencies": {
     "babel-loader": "^7.1.1",
@@ -25,7 +25,7 @@
     "start": "webpack --watch",
     "test": "jest"
   },
-  "description": "Baehance is a portfolio showcase web application inspired by Behance. It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.",
+  "description": "ArtBook is a portfolio showcase web application inspired by Behance. It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.",
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
@@ -40,13 +40,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anastassia-b/baehance.git"
+    "url": "git+https://github.com/anastassia-b/art-book-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anastassia-b/baehance/issues"
+    "url": "https://github.com/anastassia-b/art-book-app/issues"
   },
-  "homepage": "https://github.com/anastassia-b/baehance#readme"
+  "homepage": "https://github.com/anastassia-b/art-book-app#readme"
 }

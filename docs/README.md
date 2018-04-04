@@ -1,15 +1,12 @@
-# Baehance Project Proposal
+# ArtBook Project Proposal
 
 [Heroku link][heroku]
 
-[Trello link][trello]
-
-[heroku]: http://www.baehance.herokuapp.com
-[trello]: https://trello.com/b/X5VG72uB/baehance
+[heroku]: http://www.artbookapp.herokuapp.com
 
 ## Minimum Viable Product
 
-Baehance is a portfolio showcase web application inspired by Behance-- built with Ruby on Rails and React/Redux. All MVP features will have smooth, bug-free navigation, adequate seed data and stylish CSS:
+ArtBook is a portfolio showcase web application inspired by Behance-- built with Ruby on Rails and React/Redux. All MVP features will have smooth, bug-free navigation, adequate seed data and stylish CSS:
 
 1. Hosting on Heroku
 2. Production README

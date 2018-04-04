@@ -17,7 +17,7 @@ describe('entry', () => {
     ReactDOM.render = jest.fn();
 
     Root = require('../components/root');
-    Entry = require('../baehance');
+    Entry = require('../index');
 
     // invoke the callback passed to document.addEventListener
     document.addEventListener.mock.calls[0][1]();
