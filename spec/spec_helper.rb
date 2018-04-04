@@ -94,3 +94,10 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+def register(username)
+  visit '/users/new'
+  fill_in 'Username', with: username
+  fill_in 'Password', with: 'password'
+  click_button 'Register'
+end
