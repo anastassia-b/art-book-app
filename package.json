@@ -23,7 +23,8 @@
   },
   "scripts": {
     "postinstall": "webpack",
-    "start": "webpack --watch"
+    "start": "webpack --watch",
+    "test": "jest"
   },
   "description": "Baehance is a portfolio showcase web application inspired by Behance. It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.",
   "version": "1.0.0",
