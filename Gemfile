@@ -44,6 +44,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'annotate'
   gem 'rspec-rails', '~> 3.7'
+  gem 'rspec_junit_formatter'
   # gem "guard", ">= 2.2.2", :require => false
   # gem "guard-livereload",  :require => false
   # gem "rack-livereload"
