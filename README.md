@@ -8,10 +8,42 @@ https://artbookapp.herokuapp.com/
 ArtBook is a portfolio showcase web application. It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.
 
 ## Planning & Design
+---
 
 [Design documents can be found in the wiki!](https://github.com/anastassia-b/art-book-app/wiki)
 
+## Technologies
+---
+
+### Backend
+* Ruby On Rails
+* RSpec
+* jBuilder
+* PostgreSQL RDBMS
+* Heroku
+
+### Frontend
+* React/Redux
+* JavaScript
+* Jest
+* SCSS/CSS
+* npm
+* Webpack
+
+### Storage
+* Cloudinary for users' profile pictures and project images storage.
+
+
 ## Features & Implementation
+---
+
+**Users:** A user can sign up, log in, and log out. Each user has a profile.
+
+**Projects:** Users own many projects, which are composed of images. Projects can be explored on the dashboard.
+
+**Comments:** Users can comment on projects and delete their own comments.
+
+**Likes:** Users can like and unlike projects. A users liked projects are displayed on their profile.
 
 ### Secure Authentication
 * BCrypt for password-salting and hashing for a secure authentication system.
@@ -23,7 +55,7 @@ ArtBook is a portfolio showcase web application. It is a full-stack app built us
 
 Modals were used to implement the Login/Signup session forms, as well as project views.
 
-```javascript
+```jsx
 render() {
   const project = this.props.project;
   return (
@@ -62,41 +94,35 @@ render() {
 
 ### Comments and Likes
 
+Users can comment and like projects.
+
 ![Comments and Likes](http://g.recordit.co/aHuEZPU54l.gif)
 
-## Technologies
 
-### Backend
-* Ruby On Rails
-* jBuilder
-* PostgreSQL RDBMS
-* Heroku
-
-### Frontend
-* React/Redux
-* JavaScript
-* SCSS/CSS
-* npm
-* Webpack
-
-### Storage
-* Cloudinary for users' profile pictures and project images storage.
+## In-Progress
+---
+- [ ] Point heroku to custom domain name.
+- [ ] Deploy through AWS server and remote Postgres database.
+- [ ] Write more backend and frontend tests.
+- [ ] Refactor project modal.
+- [ ] Refactor api call on a user page.
 
 
 ## Future Features
+---
 
-### Infinite scroll
+#### Infinite scroll
 
-This will allow users to keep scrolling to retrieve more content.
+This will allow users to keep scrolling to retrieve more content, instead of fetching it all at once.
 
-### Follows and User-specific Feed
+#### Follows and User-specific Feed
 
 Users will be able to follow each other, allowing for a customizable feed per user.
 
-### Search by content (tags)
+#### Search by content (tags)
 
 Categorizing projects will allow users to search and filter through projects.
 
-### Upload projects
+#### Upload projects
 
 Users will be able to upload, edit, and destroy their own projects through the API.
