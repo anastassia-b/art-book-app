@@ -10,10 +10,10 @@ ArtBook is a portfolio showcase web application. It is a full-stack app built us
 ## Planning & Design
 
 <p align="center">
-![wireframes](./docs/wireframes/wireframes.jpg)
+<img src="./docs/wireframes/wireframes.jpg" />
 </p>
 <p align="center">
-[Design documents can be found in the wiki!](https://github.com/anastassia-b/art-book-app/wiki)
+<a href="https://github.com/anastassia-b/art-book-app/wiki">Design documents can be found in the wiki!</a>
 </p>
 
 ## Technologies
