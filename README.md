@@ -51,7 +51,10 @@ ArtBook is a portfolio showcase web application. It is a full-stack app built us
 * BCrypt for password-salting and hashing for a secure authentication system.
 * Guest / Demo Account
 
-![Session](http://g.recordit.co/DTgAZHML7h.gif)
+
+<p align="center">
+<img src="http://g.recordit.co/DTgAZHML7h.gif" width="500"/>
+</p>
 
 ### Modals
 
@@ -98,8 +101,9 @@ render() {
 
 Users can comment and like projects.
 
-![Comments and Likes](http://g.recordit.co/aHuEZPU54l.gif)
-
+<p align="center">
+<img src="http://g.recordit.co/aHuEZPU54l.gif" width="500"/>
+</p>
 
 ## In-Progress
 
