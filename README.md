@@ -22,7 +22,6 @@ ArtBook is a portfolio showcase web application. It is a full-stack app built us
 * Ruby On Rails
 * RSpec
 * jBuilder
-* PostgreSQL RDBMS
 * Heroku
 
 ### Frontend
@@ -34,20 +33,33 @@ ArtBook is a portfolio showcase web application. It is a full-stack app built us
 * Webpack
 
 ### Storage
+* PostgreSQL RDBMS
 * Cloudinary for users' profile pictures and project images storage.
 
 
 ## Features & Implementation
 
-<span style="background-color: #FFFF00"><b>Users:</b></span> A user can sign up, log in, and log out. Each user has a profile.
+1. **Users:** A user can sign up, log in, and log out. Each user has a profile.
 
-<span style="background-color: #FFFF00"><b>Projects:</b></span> Users own many projects, which are composed of images. Projects can be explored on the dashboard.
+2. **Projects:** Users own many projects, which are composed of images. Images belong to a specific project. Projects can be explored on the dashboard.
 
-<span style="background-color: #FFFF00"><b>Comments:</b></span>
- Users can comment on projects and delete their own comments.
+3. **Comments:** Users can comment on projects and delete their own comments.
 
-<span style="background-color: #FFFF00"><b>Likes:</b></span>
-Users can like and unlike projects. A users liked projects are displayed on their profile.
+4. **Likes:** Users can like and unlike projects. A users liked projects are displayed on their profile.
+
+```ruby
+# User Model Associations
+class User < ApplicationRecord
+  # ...
+  has_many :projects, dependent: :destroy
+  has_many :images, through: :projects, source: :images
+  has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
+  has_many :liked_projects, through: :likes, source: :project
+  # ...
+end
+```
+
 
 ### Secure Authentication
 * BCrypt for password-salting and hashing for a secure authentication system.
