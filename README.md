@@ -5,7 +5,7 @@
 
 https://artbookapp.herokuapp.com/
 
-ArtBook is a portfolio showcase web application. It is a full-stack app built using a Ruby on Rails backend, Postgresql database, and React/Redux front-end architecture.
+ArtBook is a portfolio showcase web application. It is a full-stack app built using a `Ruby on Rails` backend, `PostgreSQL` database, and `React/Redux` front-end architecture.
 
 ## Planning & Design
 
@@ -19,22 +19,20 @@ ArtBook is a portfolio showcase web application. It is a full-stack app built us
 ## Technologies
 
 ### Backend
-* Ruby On Rails
-* RSpec
-* jBuilder
-* Heroku
+* Ruby On Rails, PostgreSQL, Heroku, Cloudinary
+
+  <img src="https://user-images.githubusercontent.com/26920351/36052369-45a5788a-0da2-11e8-8058-8ef5c98c759c.jpeg" height="50">
+  <img src="https://user-images.githubusercontent.com/26920351/36052411-766d6d88-0da2-11e8-8585-8fe14190f03b.png" height="50">
+  <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1461122387heroku-logo.jpg" height="45">   <img src="https://avatars2.githubusercontent.com/u/1460763?s=400&v=4" height="50">   
 
 ### Frontend
-* React/Redux
-* JavaScript
-* Jest
-* SCSS/CSS
-* npm
-* Webpack
+* React/Redux, HTML5, CSS3/SCSS, npm, webpack
 
-### Storage
-* PostgreSQL RDBMS
-* Cloudinary for users' profile pictures and project images storage.
+  <img src="https://user-images.githubusercontent.com/26920351/36052718-a5709848-0da3-11e8-8a16-bf47966d3f63.png" height="45">   <img src="https://user-images.githubusercontent.com/26920351/36052733-b59ab8f2-0da3-11e8-941b-2afc80a4219e.png" height="40">
+  <img src="https://user-images.githubusercontent.com/26920351/36052477-a6e7e416-0da2-11e8-813a-1ee556d4d8b0.png" height="50">  <img src="https://user-images.githubusercontent.com/26920351/36052488-b2fb00b2-0da2-11e8-995b-aeac3b9e68bb.png" height="56">
+
+### Testing
+* RSpec Rails, Jest, (Jenkins in progress)
 
 
 ## Features & Implementation
@@ -121,11 +119,13 @@ Users can comment and like projects.
 
 ## In-Progress
 
-- [ ] Point heroku to custom domain name.
-- [ ] Deploy through AWS server and remote Postgres database.
+- [x] In progress: setup Continuous Integration (Jenkins build passed)
+- [ ] In progress: Deploy through AWS server and remote Postgres database.
 - [ ] Write more backend and frontend tests.
+- [ ] Point heroku to custom domain name.
 - [ ] Refactor project modal.
 - [ ] Refactor api call on a user page.
+- [ ] Ensure no n+1 queries.
 
 
 ## Future Features
