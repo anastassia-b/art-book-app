@@ -39,13 +39,15 @@ ArtBook is a portfolio showcase web application. It is a full-stack app built us
 
 ## Features & Implementation
 
-**Users:** A user can sign up, log in, and log out. Each user has a profile.
+<span style="background-color: #FFFF00"><b>Users:</b></span> A user can sign up, log in, and log out. Each user has a profile.
 
-**Projects:** Users own many projects, which are composed of images. Projects can be explored on the dashboard.
+<span style="background-color: #FFFF00"><b>Projects:</b></span> Users own many projects, which are composed of images. Projects can be explored on the dashboard.
 
-**Comments:** Users can comment on projects and delete their own comments.
+<span style="background-color: #FFFF00"><b>Comments:</b></span>
+ Users can comment on projects and delete their own comments.
 
-**Likes:** Users can like and unlike projects. A users liked projects are displayed on their profile.
+<span style="background-color: #FFFF00"><b>Likes:</b></span>
+Users can like and unlike projects. A users liked projects are displayed on their profile.
 
 ### Secure Authentication
 * BCrypt for password-salting and hashing for a secure authentication system.
