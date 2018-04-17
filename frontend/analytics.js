@@ -11,10 +11,6 @@ const initializeAnalytics = (store) => {
         currentUser.id,
         userProperties
       );
-
-      analytics.track(
-        "Page Load"
-      )
     }
   };
   
