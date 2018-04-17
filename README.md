@@ -126,6 +126,7 @@ Users can comment and like projects.
 - [ ] Refactor project modal.
 - [ ] Refactor api call on a user page.
 - [ ] Ensure no n+1 queries.
+- [x] In progress: Configure Segment
 
 
 ## Future Features
