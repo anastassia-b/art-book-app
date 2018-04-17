@@ -6,7 +6,7 @@ const Segment = store => next => action => {
 
     switch(action.type) {
         case RECEIVE_COMMENT:
-            eventProperties: {
+            eventProperties = {
                 comment: action.comment
             }
             analytics.track(
@@ -15,8 +15,9 @@ const Segment = store => next => action => {
             return next(action);
 
         case RECEIVE_CURRENT_USER:
-            eventProperties: {
-                currentUser: action.currentUser
+            eventProperties = {
+                id: action.currentUser.id,
+                username: action.currentUser.username
             }
             analytics.track(
                 'Login User', eventProperties
