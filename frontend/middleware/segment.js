@@ -15,13 +15,20 @@ const Segment = store => next => action => {
             return next(action);
 
         case RECEIVE_CURRENT_USER:
-            eventProperties = {
-                id: action.currentUser.id,
-                username: action.currentUser.username
+            if (!action.currentUser) {
+                analytics.track(
+                    'Logout User', eventProperties
+                );
+            } else {
+                eventProperties = {
+                    id: action.currentUser.id,
+                    username: action.currentUser.username
+                }
+                analytics.track(
+                    'Login User', eventProperties
+                );
             }
-            analytics.track(
-                'Login User', eventProperties
-            );
+            
             return next(action);
 
         case RECEIVE_ERRORS:
